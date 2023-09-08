@@ -168,6 +168,6 @@ for massIndex in "${!massx[@]}"; do
     rootPath="${eventPath}run_${runCont}/tag_1_delphes_events.root"
     outputPath="${outPath}${mgDir}_${runCont}"
     echo -e "\tSaving run in CSV\n"
-    python3 -c "import expCSV; expCSV.export_to_csv(${rootPath},${outPath})"
+    python3 -c "import expCSV; expCSV.export_to_csv('${rootPath}','${outPath}')"
     ((runCont++))
 done

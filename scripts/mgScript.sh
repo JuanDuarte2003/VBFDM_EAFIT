@@ -40,7 +40,7 @@ declare -A couplingDic=(
 # paths
 rcPath="../MadGraph/MG5_aMC_v3_5_1/${mgDir}/Cards/run_card.dat"
 pcPath="../MadGraph/MG5_aMC_v3_5_1/${mgDir}/Cards/param_card.dat"
-binPath="../MadGraph/MG5_aMC_v3_5_1/${mgDir}/bin/generate_events"
+binPath="../MadGraph/MG5_aMC_v3_5_1/${mgDir}/bin/madevent"
 eventPath="../MadGraph/MG5_aMC_v3_5_1/${mgDir}/Events/"
 
 mlPath="./massList.txt"
@@ -164,10 +164,16 @@ for massIndex in "${!massx[@]}"; do
     echo -e "\tModifying param_card\n"
     modParamCard "${massx[massIndex]}" "${massy[massIndex]}"
     echo -e "\n\n\t\t\tGenerating Events with mx=${massx[massIndex]} and my=${massy[massIndex]}\n\n"
-    $binPath -f
-    rootPath="${eventPath}run_${runCont}/tag_1_delphes_events.root"
-    outputPath="${outPath}${mgDir}_${runCont}"
+    $binPath gen_events.sh
+    if [[ $runCont -lt 10 ]]; then
+	    echo -e "Test: runCont < 10"
+	    rootPath="${eventPath}run_0${runCont}/tag_1_delphes_events.root"
+    else
+	    rootPath="${eventPath}run_${runCont}/tag_1_delphes_events.root"
+    fi
+    outputPath="${outPath}${mgDir}_${runCont}.csv"
     echo -e "\tSaving run in CSV\n"
-    python3 -c "import expCSV; expCSV.export_to_csv('${rootPath}','${outPath}')"
+    echo -e "\nrootPath='${rootPath}'\noutputPath='${outputPath}'"
+    python3 -c "import expCSV; expCSV.export_to_csv('${rootPath}','${outputPath}')"
     ((runCont++))
 done

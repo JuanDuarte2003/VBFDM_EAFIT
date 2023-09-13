@@ -1,0 +1,1984 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: awkward in ./.local/lib/python3.9/site-packages (1.10.4)
+Requirement already satisfied: packaging in ./.local/lib/python3.9/site-packages (from awkward) (23.1)
+Requirement already satisfied: numpy>=1.13.1 in ./.local/lib/python3.9/site-packages (from awkward) (1.23.5)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in ./.local/lib/python3.9/site-packages (2.1.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in ./.local/lib/python3.9/site-packages (from pandas) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in ./.local/lib/python3.9/site-packages (from pandas) (2023.3)
+Requirement already satisfied: numpy>=1.22.4 in ./.local/lib/python3.9/site-packages (from pandas) (1.23.5)
+Requirement already satisfied: six>=1.5 in ./.local/lib/python3.9/site-packages (from python-dateutil>=2.8.2->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: numpy in ./.local/lib/python3.9/site-packages (1.23.5)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: coffea in ./.local/lib/python3.9/site-packages (0.7.21)
+Requirement already satisfied: scipy>=1.1.0 in ./.local/lib/python3.9/site-packages (from coffea) (1.11.2)
+Requirement already satisfied: uproot3-methods>=0.10.0 in ./.local/lib/python3.9/site-packages (from coffea) (0.10.1)
+Requirement already satisfied: matplotlib>=3 in ./.local/lib/python3.9/site-packages (from coffea) (3.7.2)
+Requirement already satisfied: correctionlib>=2.0.0 in ./.local/lib/python3.9/site-packages (from coffea) (2.3.3)
+Requirement already satisfied: cachetools in ./.local/lib/python3.9/site-packages (from coffea) (5.3.1)
+Requirement already satisfied: pandas in ./.local/lib/python3.9/site-packages (from coffea) (2.1.0)
+Requirement already satisfied: awkward<2,>=1.10.3 in ./.local/lib/python3.9/site-packages (from coffea) (1.10.4)
+Requirement already satisfied: tqdm>=4.27.0 in /share/apps/python/3.9_miniconda-4.10.3/lib/python3.9/site-packages (from coffea) (4.64.1)
+Requirement already satisfied: fsspec in ./.local/lib/python3.9/site-packages (from coffea) (2023.9.0)
+Requirement already satisfied: uproot3>=3.14.1 in ./.local/lib/python3.9/site-packages (from coffea) (3.14.4)
+Requirement already satisfied: mplhep>=0.1.18 in ./.local/lib/python3.9/site-packages (from coffea) (0.3.28)
+Requirement already satisfied: cloudpickle>=1.2.3 in ./.local/lib/python3.9/site-packages (from coffea) (2.2.1)
+Requirement already satisfied: uproot!=4.2.4,!=4.3.0,!=4.3.1,==4.*,>=4.1.6 in ./.local/lib/python3.9/site-packages (from coffea) (4.3.7)
+Requirement already satisfied: numba>=0.56.0 in ./.local/lib/python3.9/site-packages (from coffea) (0.57.1)
+Requirement already satisfied: lz4 in ./.local/lib/python3.9/site-packages (from coffea) (4.3.2)
+Requirement already satisfied: pyarrow>=1.0.0 in ./.local/lib/python3.9/site-packages (from coffea) (13.0.0)
+Requirement already satisfied: hist>=2 in ./.local/lib/python3.9/site-packages (from coffea) (2.7.1)
+Requirement already satisfied: packaging in ./.local/lib/python3.9/site-packages (from coffea) (23.1)
+Requirement already satisfied: numpy<1.24,>=1.18.0 in ./.local/lib/python3.9/site-packages (from coffea) (1.23.5)
+Requirement already satisfied: toml>=0.10.2 in ./.local/lib/python3.9/site-packages (from coffea) (0.10.2)
+Requirement already satisfied: setuptools in /share/apps/python/3.9_miniconda-4.10.3/lib/python3.9/site-packages (from uproot!=4.2.4,!=4.3.0,!=4.3.1,==4.*,>=4.1.6->coffea) (65.6.3)
+Requirement already satisfied: pydantic<2,>=1.7.3 in ./.local/lib/python3.9/site-packages (from correctionlib>=2.0.0->coffea) (1.10.12)
+Requirement already satisfied: rich in ./.local/lib/python3.9/site-packages (from correctionlib>=2.0.0->coffea) (13.5.2)
+Requirement already satisfied: histoprint>=2.2.0 in ./.local/lib/python3.9/site-packages (from hist>=2->coffea) (2.4.0)
+Requirement already satisfied: typing-extensions>=4 in ./.local/lib/python3.9/site-packages (from hist>=2->coffea) (4.7.1)
+Requirement already satisfied: boost-histogram~=1.3.1 in ./.local/lib/python3.9/site-packages (from hist>=2->coffea) (1.3.2)
+Requirement already satisfied: fonttools>=4.22.0 in ./.local/lib/python3.9/site-packages (from matplotlib>=3->coffea) (4.42.1)
+Requirement already satisfied: pillow>=6.2.0 in ./.local/lib/python3.9/site-packages (from matplotlib>=3->coffea) (10.0.0)
+Requirement already satisfied: python-dateutil>=2.7 in ./.local/lib/python3.9/site-packages (from matplotlib>=3->coffea) (2.8.2)
+Requirement already satisfied: importlib-resources>=3.2.0 in ./.local/lib/python3.9/site-packages (from matplotlib>=3->coffea) (6.0.1)
+Requirement already satisfied: contourpy>=1.0.1 in ./.local/lib/python3.9/site-packages (from matplotlib>=3->coffea) (1.1.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in ./.local/lib/python3.9/site-packages (from matplotlib>=3->coffea) (1.4.5)
+Requirement already satisfied: pyparsing<3.1,>=2.3.1 in ./.local/lib/python3.9/site-packages (from matplotlib>=3->coffea) (3.0.9)
+Requirement already satisfied: cycler>=0.10 in ./.local/lib/python3.9/site-packages (from matplotlib>=3->coffea) (0.11.0)
+Requirement already satisfied: mplhep-data in ./.local/lib/python3.9/site-packages (from mplhep>=0.1.18->coffea) (0.0.3)
+Requirement already satisfied: uhi>=0.2.0 in ./.local/lib/python3.9/site-packages (from mplhep>=0.1.18->coffea) (0.3.3)
+Requirement already satisfied: llvmlite<0.41,>=0.40.0dev0 in ./.local/lib/python3.9/site-packages (from numba>=0.56.0->coffea) (0.40.1)
+Requirement already satisfied: awkward0 in ./.local/lib/python3.9/site-packages (from uproot3>=3.14.1->coffea) (0.15.5)
+Requirement already satisfied: pytz>=2020.1 in ./.local/lib/python3.9/site-packages (from pandas->coffea) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in ./.local/lib/python3.9/site-packages (from pandas->coffea) (2023.3)
+Requirement already satisfied: click>=7.0.0 in ./.local/lib/python3.9/site-packages (from histoprint>=2.2.0->hist>=2->coffea) (8.1.7)
+Requirement already satisfied: zipp>=3.1.0 in ./.local/lib/python3.9/site-packages (from importlib-resources>=3.2.0->matplotlib>=3->coffea) (3.16.2)
+Requirement already satisfied: six>=1.5 in ./.local/lib/python3.9/site-packages (from python-dateutil>=2.7->matplotlib>=3->coffea) (1.16.0)
+Requirement already satisfied: markdown-it-py>=2.2.0 in ./.local/lib/python3.9/site-packages (from rich->correctionlib>=2.0.0->coffea) (3.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in ./.local/lib/python3.9/site-packages (from rich->correctionlib>=2.0.0->coffea) (2.16.1)
+Requirement already satisfied: mdurl~=0.1 in ./.local/lib/python3.9/site-packages (from markdown-it-py>=2.2.0->rich->correctionlib>=2.0.0->coffea) (0.1.2)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: vector in ./.local/lib/python3.9/site-packages (1.1.1)
+Requirement already satisfied: numpy>=1.13.3 in ./.local/lib/python3.9/site-packages (from vector) (1.23.5)
+Requirement already satisfied: packaging>=19 in ./.local/lib/python3.9/site-packages (from vector) (23.1)
+
+
+		Events of DM_gSq_only
+
+
+	Initializing param_card
+
+	Reading masses
+
+	Starting generation
+
+	Modifying run_card
+
+	Modifying param_card
+
+
+
+			Generating Events with mx=10.0 and my=100.0
+
+
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/DM_gSq_only/Cards/me5_configuration.txt  
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/input/mg5_configuration.txt  
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/DM_gSq_only/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import command gen_events.sh
+generate_events
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse EOF value[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param   : [32mparam_card.dat[0m                               |
+|  [31m2[0m. run     : [32mrun_card.dat[0m                                 |
+|  [31m3[0m. pythia8 : [32mpythia8_card.dat[0m                             |
+|  [31m4[0m. delphes : [32mdelphes_card.dat[0m                             |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, 4, enter path, ... ]
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse 0 value[0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.13 [0m
+Generating 50000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 5729
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO: Compiling for process 1/60. 
+INFO:     P1_gg_y0uux_y0_xdxdx  
+INFO: Compiling for process 2/60. 
+INFO:     P1_gg_y0ccx_y0_xdxdx  
+INFO: Compiling for process 3/60. 
+INFO:     P1_gg_y0ddx_y0_xdxdx  
+INFO: Compiling for process 4/60. 
+INFO:     P1_gg_y0ssx_y0_xdxdx  
+INFO: Compiling for process 5/60. 
+INFO:     P1_gg_y0bbx_y0_xdxdx  
+INFO: Compiling for process 6/60. 
+INFO:     P1_gu_y0gu_y0_xdxdx  
+INFO: Compiling for process 7/60. 
+INFO:     P1_gc_y0gc_y0_xdxdx  
+INFO: Compiling for process 8/60. 
+INFO:     P1_gd_y0gd_y0_xdxdx  
+INFO: Compiling for process 9/60. 
+INFO:     P1_gs_y0gs_y0_xdxdx  
+INFO: Compiling for process 10/60. 
+INFO:     P1_gb_y0gb_y0_xdxdx  
+INFO: Compiling for process 11/60. 
+INFO:     P1_uu_y0uu_y0_xdxdx  
+INFO: Compiling for process 12/60. 
+INFO:     P1_uc_y0uc_y0_xdxdx  
+INFO: Compiling for process 13/60. 
+INFO:     P1_ud_y0ud_y0_xdxdx  
+INFO: Compiling for process 14/60. 
+INFO:     P1_us_y0us_y0_xdxdx  
+INFO: Compiling for process 15/60. 
+INFO:     P1_ub_y0ub_y0_xdxdx  
+INFO: Compiling for process 16/60. 
+INFO:     P1_uux_y0gg_y0_xdxdx  
+INFO: Compiling for process 17/60. 
+INFO:     P1_uux_y0ccx_y0_xdxdx  
+INFO: Compiling for process 18/60. 
+INFO:     P1_uux_y0ddx_y0_xdxdx  
+INFO: Compiling for process 19/60. 
+INFO:     P1_uux_y0ssx_y0_xdxdx  
+INFO: Compiling for process 20/60. 
+INFO:     P1_uux_y0bbx_y0_xdxdx  
+INFO: Compiling for process 21/60. 
+INFO:     P1_cc_y0cc_y0_xdxdx  
+INFO: Compiling for process 22/60. 
+INFO:     P1_cd_y0cd_y0_xdxdx  
+INFO: Compiling for process 23/60. 
+INFO:     P1_cs_y0cs_y0_xdxdx  
+INFO: Compiling for process 24/60. 
+INFO:     P1_cb_y0cb_y0_xdxdx  
+INFO: Compiling for process 25/60. 
+INFO:     P1_cux_y0cux_y0_xdxdx  
+INFO: Compiling for process 26/60. 
+INFO:     P1_ccx_y0gg_y0_xdxdx  
+INFO: Compiling for process 27/60. 
+INFO:     P1_ccx_y0uux_y0_xdxdx  
+INFO: Compiling for process 28/60. 
+INFO:     P1_ccx_y0ddx_y0_xdxdx  
+INFO: Compiling for process 29/60. 
+INFO:     P1_ccx_y0ssx_y0_xdxdx  
+INFO: Compiling for process 30/60. 
+INFO:     P1_ccx_y0bbx_y0_xdxdx  
+INFO: Compiling for process 31/60. 
+INFO:     P1_dd_y0dd_y0_xdxdx  
+INFO: Compiling for process 32/60. 
+INFO:     P1_ds_y0ds_y0_xdxdx  
+INFO: Compiling for process 33/60. 
+INFO:     P1_db_y0db_y0_xdxdx  
+INFO: Compiling for process 34/60. 
+INFO:     P1_dux_y0dux_y0_xdxdx  
+INFO: Compiling for process 35/60. 
+INFO:     P1_dcx_y0dcx_y0_xdxdx  
+INFO: Compiling for process 36/60. 
+INFO:     P1_ddx_y0gg_y0_xdxdx  
+INFO: Compiling for process 37/60. 
+INFO:     P1_ddx_y0uux_y0_xdxdx  
+INFO: Compiling for process 38/60. 
+INFO:     P1_ddx_y0ccx_y0_xdxdx  
+INFO: Compiling for process 39/60. 
+INFO:     P1_ddx_y0ssx_y0_xdxdx  
+INFO: Compiling for process 40/60. 
+INFO:     P1_ddx_y0bbx_y0_xdxdx  
+INFO: Compiling for process 41/60. 
+INFO:     P1_ss_y0ss_y0_xdxdx  
+INFO: Compiling for process 42/60. 
+INFO:     P1_sb_y0sb_y0_xdxdx  
+INFO: Compiling for process 43/60. 
+INFO:     P1_sux_y0sux_y0_xdxdx  
+INFO: Compiling for process 44/60. 
+INFO:     P1_scx_y0scx_y0_xdxdx  
+INFO: Compiling for process 45/60. 
+INFO:     P1_sdx_y0sdx_y0_xdxdx  
+INFO: Compiling for process 46/60. 
+INFO:     P1_ssx_y0gg_y0_xdxdx  
+INFO: Compiling for process 47/60. 
+INFO:     P1_ssx_y0uux_y0_xdxdx  
+INFO: Compiling for process 48/60. 
+INFO:     P1_ssx_y0ccx_y0_xdxdx  
+INFO: Compiling for process 49/60. 
+INFO:     P1_ssx_y0ddx_y0_xdxdx  
+INFO: Compiling for process 50/60. 
+INFO:     P1_ssx_y0bbx_y0_xdxdx  
+INFO: Compiling for process 51/60. 
+INFO:     P1_bb_y0bb_y0_xdxdx  
+INFO: Compiling for process 52/60. 
+INFO:     P1_bux_y0bux_y0_xdxdx  
+INFO: Compiling for process 53/60. 
+INFO:     P1_bcx_y0bcx_y0_xdxdx  
+INFO: Compiling for process 54/60. 
+INFO:     P1_bdx_y0bdx_y0_xdxdx  
+INFO: Compiling for process 55/60. 
+INFO:     P1_bsx_y0bsx_y0_xdxdx  
+INFO: Compiling for process 56/60. 
+INFO:     P1_bbx_y0gg_y0_xdxdx  
+INFO: Compiling for process 57/60. 
+INFO:     P1_bbx_y0uux_y0_xdxdx  
+INFO: Compiling for process 58/60. 
+INFO:     P1_bbx_y0ccx_y0_xdxdx  
+INFO: Compiling for process 59/60. 
+INFO:     P1_bbx_y0ddx_y0_xdxdx  
+INFO: Compiling for process 60/60. 
+INFO:     P1_bbx_y0ssx_y0_xdxdx  
+INFO:     P1_gg_y0uux_y0_xdxdx  
+INFO:     P1_gg_y0ccx_y0_xdxdx  
+INFO:     P1_gg_y0ddx_y0_xdxdx  
+INFO:     P1_gg_y0ssx_y0_xdxdx  
+INFO:     P1_gg_y0bbx_y0_xdxdx  
+INFO:     P1_gu_y0gu_y0_xdxdx  
+INFO:     P1_gc_y0gc_y0_xdxdx  
+INFO:     P1_gd_y0gd_y0_xdxdx  
+INFO:     P1_gs_y0gs_y0_xdxdx  
+INFO:     P1_gb_y0gb_y0_xdxdx  
+INFO:     P1_uu_y0uu_y0_xdxdx  
+INFO:     P1_uc_y0uc_y0_xdxdx  
+INFO:     P1_ud_y0ud_y0_xdxdx  
+INFO:     P1_us_y0us_y0_xdxdx  
+INFO:     P1_ub_y0ub_y0_xdxdx  
+INFO:     P1_uux_y0gg_y0_xdxdx  
+INFO:     P1_uux_y0ccx_y0_xdxdx  
+INFO:     P1_uux_y0ddx_y0_xdxdx  
+INFO:     P1_uux_y0ssx_y0_xdxdx  
+INFO:     P1_uux_y0bbx_y0_xdxdx  
+INFO:     P1_cc_y0cc_y0_xdxdx  
+INFO:     P1_cd_y0cd_y0_xdxdx  
+INFO:     P1_cs_y0cs_y0_xdxdx  
+INFO:     P1_cb_y0cb_y0_xdxdx  
+INFO:     P1_cux_y0cux_y0_xdxdx  
+INFO:     P1_ccx_y0gg_y0_xdxdx  
+INFO:     P1_ccx_y0uux_y0_xdxdx  
+INFO:     P1_ccx_y0ddx_y0_xdxdx  
+INFO:     P1_ccx_y0ssx_y0_xdxdx  
+INFO:     P1_ccx_y0bbx_y0_xdxdx  
+INFO:     P1_dd_y0dd_y0_xdxdx  
+INFO:     P1_ds_y0ds_y0_xdxdx  
+INFO:     P1_db_y0db_y0_xdxdx  
+INFO:     P1_dux_y0dux_y0_xdxdx  
+INFO:     P1_dcx_y0dcx_y0_xdxdx  
+INFO:     P1_ddx_y0gg_y0_xdxdx  
+INFO:     P1_ddx_y0uux_y0_xdxdx  
+INFO:     P1_ddx_y0ccx_y0_xdxdx  
+INFO:     P1_ddx_y0ssx_y0_xdxdx  
+INFO:     P1_ddx_y0bbx_y0_xdxdx  
+INFO:     P1_ss_y0ss_y0_xdxdx  
+INFO:     P1_sb_y0sb_y0_xdxdx  
+INFO:     P1_sux_y0sux_y0_xdxdx  
+INFO:     P1_scx_y0scx_y0_xdxdx  
+INFO:     P1_sdx_y0sdx_y0_xdxdx  
+INFO:     P1_ssx_y0gg_y0_xdxdx  
+INFO:     P1_ssx_y0uux_y0_xdxdx  
+INFO:     P1_ssx_y0ccx_y0_xdxdx  
+INFO:     P1_ssx_y0ddx_y0_xdxdx  
+INFO:     P1_ssx_y0bbx_y0_xdxdx  
+INFO:     P1_bb_y0bb_y0_xdxdx  
+INFO:     P1_bux_y0bux_y0_xdxdx  
+INFO:     P1_bcx_y0bcx_y0_xdxdx  
+INFO:     P1_bdx_y0bdx_y0_xdxdx  
+INFO:     P1_bsx_y0bsx_y0_xdxdx  
+INFO:     P1_bbx_y0gg_y0_xdxdx  
+INFO:     P1_bbx_y0uux_y0_xdxdx  
+INFO:     P1_bbx_y0ccx_y0_xdxdx  
+INFO:     P1_bbx_y0ddx_y0_xdxdx  
+INFO:     P1_bbx_y0ssx_y0_xdxdx  
+INFO:  Idle: 1,  Running: 5,  Completed: 139 [ current time: 10h36 ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 139 [ current time: 10h36 ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 143 [  3s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 145 [  4.3s  ] 
+INFO: End survey 
+refine 50000
+Creating Jobs
+INFO: Refine results to 50000 
+INFO: Generating 50000.0 unweighted events. 
+sum of cpu time of last step: 4m21s
+INFO: Effective Luminosity 357815.8487645437 pb^-1 
+INFO: need to improve 22 channels 
+- Current estimate of cross-section: 0.1676840201661449 +- 0.001368861303925213
+    P1_gg_y0uux_y0_xdxdx 
+    P1_gg_y0ccx_y0_xdxdx 
+    P1_gg_y0ddx_y0_xdxdx 
+    P1_gg_y0ssx_y0_xdxdx 
+    P1_gg_y0bbx_y0_xdxdx 
+    P1_gu_y0gu_y0_xdxdx 
+    P1_gc_y0gc_y0_xdxdx 
+    P1_gd_y0gd_y0_xdxdx 
+    P1_gs_y0gs_y0_xdxdx 
+    P1_gb_y0gb_y0_xdxdx 
+    P1_uu_y0uu_y0_xdxdx 
+    P1_uc_y0uc_y0_xdxdx 
+    P1_ud_y0ud_y0_xdxdx 
+    P1_us_y0us_y0_xdxdx 
+    P1_ub_y0ub_y0_xdxdx 
+    P1_uux_y0gg_y0_xdxdx 
+    P1_uux_y0ccx_y0_xdxdx 
+    P1_uux_y0ddx_y0_xdxdx 
+    P1_uux_y0ssx_y0_xdxdx 
+    P1_uux_y0bbx_y0_xdxdx 
+    P1_cc_y0cc_y0_xdxdx 
+    P1_cd_y0cd_y0_xdxdx 
+    P1_cs_y0cs_y0_xdxdx 
+    P1_cb_y0cb_y0_xdxdx 
+    P1_cux_y0cux_y0_xdxdx 
+    P1_ccx_y0gg_y0_xdxdx 
+    P1_ccx_y0uux_y0_xdxdx 
+    P1_ccx_y0ddx_y0_xdxdx 
+    P1_ccx_y0ssx_y0_xdxdx 
+    P1_ccx_y0bbx_y0_xdxdx 
+    P1_dd_y0dd_y0_xdxdx 
+    P1_ds_y0ds_y0_xdxdx 
+    P1_db_y0db_y0_xdxdx 
+    P1_dux_y0dux_y0_xdxdx 
+    P1_dcx_y0dcx_y0_xdxdx 
+    P1_ddx_y0gg_y0_xdxdx 
+    P1_ddx_y0uux_y0_xdxdx 
+    P1_ddx_y0ccx_y0_xdxdx 
+    P1_ddx_y0ssx_y0_xdxdx 
+    P1_ddx_y0bbx_y0_xdxdx 
+    P1_ss_y0ss_y0_xdxdx 
+    P1_sb_y0sb_y0_xdxdx 
+    P1_sux_y0sux_y0_xdxdx 
+    P1_scx_y0scx_y0_xdxdx 
+    P1_sdx_y0sdx_y0_xdxdx 
+    P1_ssx_y0gg_y0_xdxdx 
+    P1_ssx_y0uux_y0_xdxdx 
+    P1_ssx_y0ccx_y0_xdxdx 
+    P1_ssx_y0ddx_y0_xdxdx 
+    P1_ssx_y0bbx_y0_xdxdx 
+    P1_bb_y0bb_y0_xdxdx 
+    P1_bux_y0bux_y0_xdxdx 
+    P1_bcx_y0bcx_y0_xdxdx 
+    P1_bdx_y0bdx_y0_xdxdx 
+    P1_bsx_y0bsx_y0_xdxdx 
+    P1_bbx_y0gg_y0_xdxdx 
+    P1_bbx_y0uux_y0_xdxdx 
+    P1_bbx_y0ccx_y0_xdxdx 
+    P1_bbx_y0ddx_y0_xdxdx 
+    P1_bbx_y0ssx_y0_xdxdx 
+INFO:  Idle: 27,  Running: 32,  Completed: 7 [ current time: 10h37 ] 
+INFO:  Idle: 26,  Running: 32,  Completed: 8 [  5.3s  ] 
+INFO:  Idle: 21,  Running: 32,  Completed: 13 [  11.8s  ] 
+INFO:  Idle: 16,  Running: 32,  Completed: 18 [  29.5s  ] 
+INFO:  Idle: 13,  Running: 32,  Completed: 21 [  33.4s  ] 
+INFO:  Idle: 12,  Running: 32,  Completed: 22 [  37.6s  ] 
+INFO:  Idle: 11,  Running: 32,  Completed: 23 [  44.4s  ] 
+INFO:  Idle: 10,  Running: 32,  Completed: 24 [  51s  ] 
+INFO:  Idle: 9,  Running: 32,  Completed: 25 [  1m 12s  ] 
+INFO:  Idle: 7,  Running: 32,  Completed: 27 [  1m 15s  ] 
+INFO:  Idle: 4,  Running: 32,  Completed: 30 [  1m 38s  ] 
+INFO:  Idle: 1,  Running: 32,  Completed: 33 [  1m 54s  ] 
+INFO:  Idle: 0,  Running: 30,  Completed: 36 [  2m 4s  ] 
+INFO:  Idle: 0,  Running: 29,  Completed: 37 [  2m 9s  ] 
+INFO:  Idle: 0,  Running: 27,  Completed: 39 [  2m 22s  ] 
+INFO:  Idle: 0,  Running: 25,  Completed: 41 [  2m 34s  ] 
+INFO:  Idle: 0,  Running: 23,  Completed: 43 [  3m 6s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 46 [  3m 11s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 49 [  3m 16s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 55 [  3m 19s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 61 [  3m 22s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 63 [  3m 26s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 65 [  3m 29s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 66 [  3m 30s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 8m27s
+INFO: finish refine 
+refine 50000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   0.1702 +- 0.0002689 pb
+     Nb of events :  50000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
+Splitting .lhe event file for PY8 parallelization...
+Submitting Pythia8 jobs...
+Pythia8 shower jobs: 1 Idle, 31 Running, 0 Done [27 seconds]
+Pythia8 shower jobs: 0 Idle, 32 Running, 0 Done [5m27s]
+Pythia8 shower jobs: 0 Idle, 19 Running, 13 Done [25m28s]
+Pythia8 shower jobs: 0 Idle, 0 Running, 32 Done [26m29s]
+Merging results from the split PY8 runs...
+[1;34mWARNING: Install gnuplot to be able to view the plots generated at :
+    [0m
+INFO: Pythia8 shower finished after 27m26s. 
+INFO: prepare delphes run 
+INFO: Running Delphes 
+INFO: If you are interested in lhco output. please run root2lhco converter. 
+INFO:  or edit bin/internal/run_delphes3 to run the converter automatically. 
+INFO: delphes done 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   0.1702 +- 0.0002689 pb
+     Nb of events :  50000
+ 
+INFO: storing files of previous run 
+INFO: Storing Pythia8 files of previous run 
+INFO: Done 
+quit
+INFO:  
+launch in debug mode
+Test: runCont < 10
+	Saving run in CSV
+
+
+rootPath='../MadGraph/MG5_aMC_v3_5_1/DM_gSq_only/Events/run_01/tag_1_delphes_events.root'
+outputPath='../ToSCP/csv/DM_gSq_only_1.csv'
+
+
+		Events of DM_gSg1_only
+
+
+	Initializing param_card
+
+	Reading masses
+
+	Starting generation
+
+	Modifying run_card
+
+	Modifying param_card
+
+
+
+			Generating Events with mx=10.0 and my=100.0
+
+
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/DM_gSg1_only/Cards/me5_configuration.txt  
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/input/mg5_configuration.txt  
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/DM_gSg1_only/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import command gen_events.sh
+generate_events
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse EOF value[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param   : [32mparam_card.dat[0m                               |
+|  [31m2[0m. run     : [32mrun_card.dat[0m                                 |
+|  [31m3[0m. pythia8 : [32mpythia8_card.dat[0m                             |
+|  [31m4[0m. delphes : [32mdelphes_card.dat[0m                             |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, 4, enter path, ... ]
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse 0 value[0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.13 [0m
+Generating 50000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 28870
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO: Compiling for process 1/61. 
+INFO:     P1_gg_y0gg_y0_xdxdx  
+INFO: Compiling for process 2/61. 
+INFO:     P1_gg_y0uux_y0_xdxdx  
+INFO: Compiling for process 3/61. 
+INFO:     P1_gg_y0ccx_y0_xdxdx  
+INFO: Compiling for process 4/61. 
+INFO:     P1_gg_y0ddx_y0_xdxdx  
+INFO: Compiling for process 5/61. 
+INFO:     P1_gg_y0ssx_y0_xdxdx  
+INFO: Compiling for process 6/61. 
+INFO:     P1_gg_y0bbx_y0_xdxdx  
+INFO: Compiling for process 7/61. 
+INFO:     P1_gu_y0gu_y0_xdxdx  
+INFO: Compiling for process 8/61. 
+INFO:     P1_gc_y0gc_y0_xdxdx  
+INFO: Compiling for process 9/61. 
+INFO:     P1_gd_y0gd_y0_xdxdx  
+INFO: Compiling for process 10/61. 
+INFO:     P1_gs_y0gs_y0_xdxdx  
+INFO: Compiling for process 11/61. 
+INFO:     P1_gb_y0gb_y0_xdxdx  
+INFO: Compiling for process 12/61. 
+INFO:     P1_uu_y0uu_y0_xdxdx  
+INFO: Compiling for process 13/61. 
+INFO:     P1_uc_y0uc_y0_xdxdx  
+INFO: Compiling for process 14/61. 
+INFO:     P1_ud_y0ud_y0_xdxdx  
+INFO: Compiling for process 15/61. 
+INFO:     P1_us_y0us_y0_xdxdx  
+INFO: Compiling for process 16/61. 
+INFO:     P1_ub_y0ub_y0_xdxdx  
+INFO: Compiling for process 17/61. 
+INFO:     P1_uux_y0gg_y0_xdxdx  
+INFO: Compiling for process 18/61. 
+INFO:     P1_uux_y0ccx_y0_xdxdx  
+INFO: Compiling for process 19/61. 
+INFO:     P1_uux_y0ddx_y0_xdxdx  
+INFO: Compiling for process 20/61. 
+INFO:     P1_uux_y0ssx_y0_xdxdx  
+INFO: Compiling for process 21/61. 
+INFO:     P1_uux_y0bbx_y0_xdxdx  
+INFO: Compiling for process 22/61. 
+INFO:     P1_cc_y0cc_y0_xdxdx  
+INFO: Compiling for process 23/61. 
+INFO:     P1_cd_y0cd_y0_xdxdx  
+INFO: Compiling for process 24/61. 
+INFO:     P1_cs_y0cs_y0_xdxdx  
+INFO: Compiling for process 25/61. 
+INFO:     P1_cb_y0cb_y0_xdxdx  
+INFO: Compiling for process 26/61. 
+INFO:     P1_cux_y0cux_y0_xdxdx  
+INFO: Compiling for process 27/61. 
+INFO:     P1_ccx_y0gg_y0_xdxdx  
+INFO: Compiling for process 28/61. 
+INFO:     P1_ccx_y0uux_y0_xdxdx  
+INFO: Compiling for process 29/61. 
+INFO:     P1_ccx_y0ddx_y0_xdxdx  
+INFO: Compiling for process 30/61. 
+INFO:     P1_ccx_y0ssx_y0_xdxdx  
+INFO: Compiling for process 31/61. 
+INFO:     P1_ccx_y0bbx_y0_xdxdx  
+INFO: Compiling for process 32/61. 
+INFO:     P1_dd_y0dd_y0_xdxdx  
+INFO: Compiling for process 33/61. 
+INFO:     P1_ds_y0ds_y0_xdxdx  
+INFO: Compiling for process 34/61. 
+INFO:     P1_db_y0db_y0_xdxdx  
+INFO: Compiling for process 35/61. 
+INFO:     P1_dux_y0dux_y0_xdxdx  
+INFO: Compiling for process 36/61. 
+INFO:     P1_dcx_y0dcx_y0_xdxdx  
+INFO: Compiling for process 37/61. 
+INFO:     P1_ddx_y0gg_y0_xdxdx  
+INFO: Compiling for process 38/61. 
+INFO:     P1_ddx_y0uux_y0_xdxdx  
+INFO: Compiling for process 39/61. 
+INFO:     P1_ddx_y0ccx_y0_xdxdx  
+INFO: Compiling for process 40/61. 
+INFO:     P1_ddx_y0ssx_y0_xdxdx  
+INFO: Compiling for process 41/61. 
+INFO:     P1_ddx_y0bbx_y0_xdxdx  
+INFO: Compiling for process 42/61. 
+INFO:     P1_ss_y0ss_y0_xdxdx  
+INFO: Compiling for process 43/61. 
+INFO:     P1_sb_y0sb_y0_xdxdx  
+INFO: Compiling for process 44/61. 
+INFO:     P1_sux_y0sux_y0_xdxdx  
+INFO: Compiling for process 45/61. 
+INFO:     P1_scx_y0scx_y0_xdxdx  
+INFO: Compiling for process 46/61. 
+INFO:     P1_sdx_y0sdx_y0_xdxdx  
+INFO: Compiling for process 47/61. 
+INFO:     P1_ssx_y0gg_y0_xdxdx  
+INFO: Compiling for process 48/61. 
+INFO:     P1_ssx_y0uux_y0_xdxdx  
+INFO: Compiling for process 49/61. 
+INFO:     P1_ssx_y0ccx_y0_xdxdx  
+INFO: Compiling for process 50/61. 
+INFO:     P1_ssx_y0ddx_y0_xdxdx  
+INFO: Compiling for process 51/61. 
+INFO:     P1_ssx_y0bbx_y0_xdxdx  
+INFO: Compiling for process 52/61. 
+INFO:     P1_bb_y0bb_y0_xdxdx  
+INFO: Compiling for process 53/61. 
+INFO:     P1_bux_y0bux_y0_xdxdx  
+INFO: Compiling for process 54/61. 
+INFO:     P1_bcx_y0bcx_y0_xdxdx  
+INFO: Compiling for process 55/61. 
+INFO:     P1_bdx_y0bdx_y0_xdxdx  
+INFO: Compiling for process 56/61. 
+INFO:     P1_bsx_y0bsx_y0_xdxdx  
+INFO: Compiling for process 57/61. 
+INFO:     P1_bbx_y0gg_y0_xdxdx  
+INFO: Compiling for process 58/61. 
+INFO:     P1_bbx_y0uux_y0_xdxdx  
+INFO: Compiling for process 59/61. 
+INFO:     P1_bbx_y0ccx_y0_xdxdx  
+INFO: Compiling for process 60/61. 
+INFO:     P1_bbx_y0ddx_y0_xdxdx  
+INFO: Compiling for process 61/61. 
+INFO:     P1_bbx_y0ssx_y0_xdxdx  
+INFO:     P1_gg_y0gg_y0_xdxdx  
+INFO:     P1_gg_y0uux_y0_xdxdx  
+INFO:     P1_gg_y0ccx_y0_xdxdx  
+INFO:     P1_gg_y0ddx_y0_xdxdx  
+INFO:     P1_gg_y0ssx_y0_xdxdx  
+INFO:     P1_gg_y0bbx_y0_xdxdx  
+INFO:     P1_gu_y0gu_y0_xdxdx  
+INFO:     P1_gc_y0gc_y0_xdxdx  
+INFO:     P1_gd_y0gd_y0_xdxdx  
+INFO:     P1_gs_y0gs_y0_xdxdx  
+INFO:     P1_gb_y0gb_y0_xdxdx  
+INFO:     P1_uu_y0uu_y0_xdxdx  
+INFO:     P1_uc_y0uc_y0_xdxdx  
+INFO:     P1_ud_y0ud_y0_xdxdx  
+INFO:     P1_us_y0us_y0_xdxdx  
+INFO:     P1_ub_y0ub_y0_xdxdx  
+INFO:     P1_uux_y0gg_y0_xdxdx  
+INFO:     P1_uux_y0ccx_y0_xdxdx  
+INFO:     P1_uux_y0ddx_y0_xdxdx  
+INFO:     P1_uux_y0ssx_y0_xdxdx  
+INFO:     P1_uux_y0bbx_y0_xdxdx  
+INFO:     P1_cc_y0cc_y0_xdxdx  
+INFO:     P1_cd_y0cd_y0_xdxdx  
+INFO:     P1_cs_y0cs_y0_xdxdx  
+INFO:     P1_cb_y0cb_y0_xdxdx  
+INFO:     P1_cux_y0cux_y0_xdxdx  
+INFO:     P1_ccx_y0gg_y0_xdxdx  
+INFO:     P1_ccx_y0uux_y0_xdxdx  
+INFO:     P1_ccx_y0ddx_y0_xdxdx  
+INFO:     P1_ccx_y0ssx_y0_xdxdx  
+INFO:     P1_ccx_y0bbx_y0_xdxdx  
+INFO:     P1_dd_y0dd_y0_xdxdx  
+INFO:     P1_ds_y0ds_y0_xdxdx  
+INFO:     P1_db_y0db_y0_xdxdx  
+INFO:     P1_dux_y0dux_y0_xdxdx  
+INFO:     P1_dcx_y0dcx_y0_xdxdx  
+INFO:     P1_ddx_y0gg_y0_xdxdx  
+INFO:     P1_ddx_y0uux_y0_xdxdx  
+INFO:     P1_ddx_y0ccx_y0_xdxdx  
+INFO:     P1_ddx_y0ssx_y0_xdxdx  
+INFO:     P1_ddx_y0bbx_y0_xdxdx  
+INFO:     P1_ss_y0ss_y0_xdxdx  
+INFO:     P1_sb_y0sb_y0_xdxdx  
+INFO:     P1_sux_y0sux_y0_xdxdx  
+INFO:     P1_scx_y0scx_y0_xdxdx  
+INFO:     P1_sdx_y0sdx_y0_xdxdx  
+INFO:     P1_ssx_y0gg_y0_xdxdx  
+INFO:     P1_ssx_y0uux_y0_xdxdx  
+INFO:     P1_ssx_y0ccx_y0_xdxdx  
+INFO:     P1_ssx_y0ddx_y0_xdxdx  
+INFO:     P1_ssx_y0bbx_y0_xdxdx  
+INFO:     P1_bb_y0bb_y0_xdxdx  
+INFO:     P1_bux_y0bux_y0_xdxdx  
+INFO:     P1_bcx_y0bcx_y0_xdxdx  
+INFO:     P1_bdx_y0bdx_y0_xdxdx  
+INFO:     P1_bsx_y0bsx_y0_xdxdx  
+INFO:     P1_bbx_y0gg_y0_xdxdx  
+INFO:     P1_bbx_y0uux_y0_xdxdx  
+INFO:     P1_bbx_y0ccx_y0_xdxdx  
+INFO:     P1_bbx_y0ddx_y0_xdxdx  
+INFO:     P1_bbx_y0ssx_y0_xdxdx  
+INFO:  Idle: 1,  Running: 0,  Completed: 94 [ current time: 11h48 ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 94 [ current time: 11h48 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 95 [  0.55s  ] 
+INFO: End survey 
+refine 50000
+Creating Jobs
+INFO: Refine results to 50000 
+INFO: Generating 50000.0 unweighted events. 
+sum of cpu time of last step: 2m09s
+INFO: Effective Luminosity 287.67366088181745 pb^-1 
+INFO: need to improve 45 channels 
+- Current estimate of cross-section: 208.56966820000005 +- 4.873690449423444
+    P1_gg_y0gg_y0_xdxdx 
+    P1_gg_y0uux_y0_xdxdx 
+    P1_gg_y0ccx_y0_xdxdx 
+    P1_gg_y0ddx_y0_xdxdx 
+    P1_gg_y0ssx_y0_xdxdx 
+    P1_gg_y0bbx_y0_xdxdx 
+    P1_gu_y0gu_y0_xdxdx 
+    P1_gc_y0gc_y0_xdxdx 
+    P1_gd_y0gd_y0_xdxdx 
+    P1_gs_y0gs_y0_xdxdx 
+    P1_gb_y0gb_y0_xdxdx 
+    P1_uu_y0uu_y0_xdxdx 
+    P1_uc_y0uc_y0_xdxdx 
+    P1_ud_y0ud_y0_xdxdx 
+    P1_us_y0us_y0_xdxdx 
+    P1_ub_y0ub_y0_xdxdx 
+    P1_uux_y0gg_y0_xdxdx 
+    P1_uux_y0ccx_y0_xdxdx 
+    P1_uux_y0ddx_y0_xdxdx 
+    P1_uux_y0ssx_y0_xdxdx 
+    P1_uux_y0bbx_y0_xdxdx 
+    P1_cc_y0cc_y0_xdxdx 
+    P1_cd_y0cd_y0_xdxdx 
+    P1_cs_y0cs_y0_xdxdx 
+    P1_cb_y0cb_y0_xdxdx 
+    P1_cux_y0cux_y0_xdxdx 
+    P1_ccx_y0gg_y0_xdxdx 
+    P1_ccx_y0uux_y0_xdxdx 
+    P1_ccx_y0ddx_y0_xdxdx 
+    P1_ccx_y0ssx_y0_xdxdx 
+    P1_ccx_y0bbx_y0_xdxdx 
+    P1_dd_y0dd_y0_xdxdx 
+    P1_ds_y0ds_y0_xdxdx 
+    P1_db_y0db_y0_xdxdx 
+    P1_dux_y0dux_y0_xdxdx 
+    P1_dcx_y0dcx_y0_xdxdx 
+    P1_ddx_y0gg_y0_xdxdx 
+    P1_ddx_y0uux_y0_xdxdx 
+    P1_ddx_y0ccx_y0_xdxdx 
+    P1_ddx_y0ssx_y0_xdxdx 
+    P1_ddx_y0bbx_y0_xdxdx 
+    P1_ss_y0ss_y0_xdxdx 
+    P1_sb_y0sb_y0_xdxdx 
+    P1_sux_y0sux_y0_xdxdx 
+    P1_scx_y0scx_y0_xdxdx 
+    P1_sdx_y0sdx_y0_xdxdx 
+    P1_ssx_y0gg_y0_xdxdx 
+    P1_ssx_y0uux_y0_xdxdx 
+    P1_ssx_y0ccx_y0_xdxdx 
+    P1_ssx_y0ddx_y0_xdxdx 
+    P1_ssx_y0bbx_y0_xdxdx 
+    P1_bb_y0bb_y0_xdxdx 
+    P1_bux_y0bux_y0_xdxdx 
+    P1_bcx_y0bcx_y0_xdxdx 
+    P1_bdx_y0bdx_y0_xdxdx 
+    P1_bsx_y0bsx_y0_xdxdx 
+    P1_bbx_y0gg_y0_xdxdx 
+    P1_bbx_y0uux_y0_xdxdx 
+    P1_bbx_y0ccx_y0_xdxdx 
+    P1_bbx_y0ddx_y0_xdxdx 
+    P1_bbx_y0ssx_y0_xdxdx 
+INFO:  Idle: 55,  Running: 32,  Completed: 3 [ current time: 11h49 ] 
+INFO:  Idle: 54,  Running: 32,  Completed: 4 [  11s  ] 
+INFO:  Idle: 53,  Running: 32,  Completed: 5 [  1m 1s  ] 
+INFO:  Idle: 51,  Running: 32,  Completed: 7 [  1m 28s  ] 
+INFO:  Idle: 49,  Running: 32,  Completed: 9 [  1m 32s  ] 
+INFO:  Idle: 45,  Running: 32,  Completed: 13 [  1m 36s  ] 
+INFO:  Idle: 43,  Running: 32,  Completed: 15 [  1m 41s  ] 
+INFO:  Idle: 41,  Running: 32,  Completed: 17 [  1m 52s  ] 
+INFO:  Idle: 40,  Running: 32,  Completed: 18 [  1m 56s  ] 
+INFO:  Idle: 39,  Running: 32,  Completed: 19 [  2m 2s  ] 
+INFO:  Idle: 37,  Running: 32,  Completed: 21 [  2m 6s  ] 
+INFO:  Idle: 35,  Running: 32,  Completed: 23 [  2m 12s  ] 
+INFO:  Idle: 32,  Running: 32,  Completed: 26 [  2m 18s  ] 
+INFO:  Idle: 31,  Running: 32,  Completed: 27 [  2m 27s  ] 
+INFO:  Idle: 29,  Running: 32,  Completed: 29 [  2m 48s  ] 
+INFO:  Idle: 28,  Running: 32,  Completed: 30 [  2m 52s  ] 
+INFO:  Idle: 27,  Running: 32,  Completed: 31 [  3m 15s  ] 
+INFO:  Idle: 26,  Running: 32,  Completed: 32 [  3m 24s  ] 
+INFO:  Idle: 25,  Running: 32,  Completed: 33 [  3m 33s  ] 
+INFO:  Idle: 23,  Running: 32,  Completed: 35 [  3m 42s  ] 
+INFO:  Idle: 22,  Running: 32,  Completed: 36 [  3m 48s  ] 
+INFO:  Idle: 20,  Running: 32,  Completed: 38 [  4m 44s  ] 
+INFO:  Idle: 19,  Running: 32,  Completed: 39 [  4m 52s  ] 
+INFO:  Idle: 17,  Running: 32,  Completed: 41 [  4m 57s  ] 
+INFO:  Idle: 16,  Running: 32,  Completed: 42 [  5m 16s  ] 
+INFO:  Idle: 15,  Running: 32,  Completed: 43 [  5m 20s  ] 
+INFO:  Idle: 13,  Running: 32,  Completed: 45 [  5m 25s  ] 
+INFO:  Idle: 9,  Running: 32,  Completed: 49 [  5m 31s  ] 
+INFO:  Idle: 7,  Running: 32,  Completed: 51 [  5m 54s  ] 
+INFO:  Idle: 6,  Running: 32,  Completed: 52 [  5m 59s  ] 
+INFO:  Idle: 5,  Running: 32,  Completed: 53 [  6m 6s  ] 
+INFO:  Idle: 4,  Running: 32,  Completed: 54 [  6m 10s  ] 
+INFO:  Idle: 3,  Running: 32,  Completed: 55 [  6m 25s  ] 
+INFO:  Idle: 2,  Running: 32,  Completed: 56 [  7m 14s  ] 
+INFO:  Idle: 1,  Running: 32,  Completed: 57 [  7m 29s  ] 
+INFO:  Idle: 0,  Running: 32,  Completed: 58 [  7m 56s  ] 
+INFO:  Idle: 0,  Running: 30,  Completed: 60 [  8m 9s  ] 
+INFO:  Idle: 0,  Running: 29,  Completed: 61 [  8m 43s  ] 
+INFO:  Idle: 0,  Running: 28,  Completed: 62 [  9m 8s  ] 
+INFO:  Idle: 0,  Running: 27,  Completed: 63 [  9m 37s  ] 
+INFO:  Idle: 0,  Running: 25,  Completed: 65 [  9m 40s  ] 
+INFO:  Idle: 0,  Running: 24,  Completed: 66 [  9m 50s  ] 
+INFO:  Idle: 0,  Running: 22,  Completed: 68 [  10m 0s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 70 [  10m 9s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 71 [  10m 15s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 72 [  10m 28s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 74 [  10m 32s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 75 [  10m 59s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 76 [  11m 13s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 79 [  11m 17s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 81 [  11m 35s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 82 [  11m 42s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 85 [  12m 17s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 86 [  12m 35s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 87 [  12m 42s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 88 [  13m 8s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 89 [  14m 24s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 90 [  17m 50s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 90 [  17m 50s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 20m32s
+INFO: finish refine 
+refine 50000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   210.4 +- 0.2615 pb
+     Nb of events :  50000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
+Splitting .lhe event file for PY8 parallelization...
+Submitting Pythia8 jobs...
+Pythia8 shower jobs: 1 Idle, 31 Running, 0 Done [27 seconds]
+Pythia8 shower jobs: 0 Idle, 32 Running, 0 Done [5m27s]
+Pythia8 shower jobs: 0 Idle, 25 Running, 7 Done [27m32s]
+Pythia8 shower jobs: 0 Idle, 0 Running, 32 Done [28m37s]
+Merging results from the split PY8 runs...
+[1;34mWARNING: Install gnuplot to be able to view the plots generated at :
+    [0m
+INFO: Pythia8 shower finished after 29m36s. 
+INFO: prepare delphes run 
+INFO: Running Delphes 
+INFO: If you are interested in lhco output. please run root2lhco converter. 
+INFO:  or edit bin/internal/run_delphes3 to run the converter automatically. 
+INFO: delphes done 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   210.4 +- 0.2615 pb
+     Nb of events :  50000
+ 
+INFO: storing files of previous run 
+INFO: Storing Pythia8 files of previous run 
+INFO: Done 
+quit
+INFO:  
+launch in debug mode
+Test: runCont < 10
+	Saving run in CSV
+
+
+rootPath='../MadGraph/MG5_aMC_v3_5_1/DM_gSg1_only/Events/run_01/tag_1_delphes_events.root'
+outputPath='../ToSCP/csv/DM_gSg1_only_1.csv'
+
+
+		Events of DM_gSg2_only_y0y0
+
+
+	Initializing param_card
+
+	Reading masses
+
+	Starting generation
+
+	Modifying run_card
+
+	Modifying param_card
+
+
+
+			Generating Events with mx=10.0 and my=100.0
+
+
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/DM_gSg2_only_y0y0/Cards/me5_configuration.txt  
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/input/mg5_configuration.txt  
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/DM_gSg2_only_y0y0/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import command gen_events.sh
+generate_events
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse EOF value[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param   : [32mparam_card.dat[0m                               |
+|  [31m2[0m. run     : [32mrun_card.dat[0m                                 |
+|  [31m3[0m. pythia8 : [32mpythia8_card.dat[0m                             |
+|  [31m4[0m. delphes : [32mdelphes_card.dat[0m                             |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, 4, enter path, ... ]
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse 0 value[0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.13 [0m
+Generating 50000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 22829
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO: Compiling for process 1/61. 
+INFO:     P1_gg_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 2/61. 
+INFO:     P1_gg_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 3/61. 
+INFO:     P1_gg_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 4/61. 
+INFO:     P1_gg_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 5/61. 
+INFO:     P1_gg_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 6/61. 
+INFO:     P1_gg_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 7/61. 
+INFO:     P1_gu_y0y0gu_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 8/61. 
+INFO:     P1_gc_y0y0gc_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 9/61. 
+INFO:     P1_gd_y0y0gd_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 10/61. 
+INFO:     P1_gs_y0y0gs_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 11/61. 
+INFO:     P1_gb_y0y0gb_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 12/61. 
+INFO:     P1_uu_y0y0uu_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 13/61. 
+INFO:     P1_uc_y0y0uc_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 14/61. 
+INFO:     P1_ud_y0y0ud_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 15/61. 
+INFO:     P1_us_y0y0us_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 16/61. 
+INFO:     P1_ub_y0y0ub_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 17/61. 
+INFO:     P1_uux_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 18/61. 
+INFO:     P1_uux_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 19/61. 
+INFO:     P1_uux_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 20/61. 
+INFO:     P1_uux_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 21/61. 
+INFO:     P1_uux_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 22/61. 
+INFO:     P1_cc_y0y0cc_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 23/61. 
+INFO:     P1_cd_y0y0cd_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 24/61. 
+INFO:     P1_cs_y0y0cs_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 25/61. 
+INFO:     P1_cb_y0y0cb_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 26/61. 
+INFO:     P1_cux_y0y0cux_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 27/61. 
+INFO:     P1_ccx_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 28/61. 
+INFO:     P1_ccx_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 29/61. 
+INFO:     P1_ccx_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 30/61. 
+INFO:     P1_ccx_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 31/61. 
+INFO:     P1_ccx_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 32/61. 
+INFO:     P1_dd_y0y0dd_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 33/61. 
+INFO:     P1_ds_y0y0ds_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 34/61. 
+INFO:     P1_db_y0y0db_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 35/61. 
+INFO:     P1_dux_y0y0dux_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 36/61. 
+INFO:     P1_dcx_y0y0dcx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 37/61. 
+INFO:     P1_ddx_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 38/61. 
+INFO:     P1_ddx_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 39/61. 
+INFO:     P1_ddx_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 40/61. 
+INFO:     P1_ddx_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 41/61. 
+INFO:     P1_ddx_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 42/61. 
+INFO:     P1_ss_y0y0ss_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 43/61. 
+INFO:     P1_sb_y0y0sb_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 44/61. 
+INFO:     P1_sux_y0y0sux_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 45/61. 
+INFO:     P1_scx_y0y0scx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 46/61. 
+INFO:     P1_sdx_y0y0sdx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 47/61. 
+INFO:     P1_ssx_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 48/61. 
+INFO:     P1_ssx_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 49/61. 
+INFO:     P1_ssx_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 50/61. 
+INFO:     P1_ssx_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 51/61. 
+INFO:     P1_ssx_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 52/61. 
+INFO:     P1_bb_y0y0bb_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 53/61. 
+INFO:     P1_bux_y0y0bux_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 54/61. 
+INFO:     P1_bcx_y0y0bcx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 55/61. 
+INFO:     P1_bdx_y0y0bdx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 56/61. 
+INFO:     P1_bsx_y0y0bsx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 57/61. 
+INFO:     P1_bbx_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 58/61. 
+INFO:     P1_bbx_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 59/61. 
+INFO:     P1_bbx_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 60/61. 
+INFO:     P1_bbx_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO: Compiling for process 61/61. 
+INFO:     P1_bbx_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gg_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gg_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gg_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gg_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gg_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gg_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gu_y0y0gu_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gc_y0y0gc_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gd_y0y0gd_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gs_y0y0gs_y0_xdxdx_y0_xdxdx  
+INFO:     P1_gb_y0y0gb_y0_xdxdx_y0_xdxdx  
+INFO:     P1_uu_y0y0uu_y0_xdxdx_y0_xdxdx  
+INFO:     P1_uc_y0y0uc_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ud_y0y0ud_y0_xdxdx_y0_xdxdx  
+INFO:     P1_us_y0y0us_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ub_y0y0ub_y0_xdxdx_y0_xdxdx  
+INFO:     P1_uux_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO:     P1_uux_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_uux_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_uux_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_uux_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_cc_y0y0cc_y0_xdxdx_y0_xdxdx  
+INFO:     P1_cd_y0y0cd_y0_xdxdx_y0_xdxdx  
+INFO:     P1_cs_y0y0cs_y0_xdxdx_y0_xdxdx  
+INFO:     P1_cb_y0y0cb_y0_xdxdx_y0_xdxdx  
+INFO:     P1_cux_y0y0cux_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ccx_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ccx_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ccx_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ccx_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ccx_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_dd_y0y0dd_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ds_y0y0ds_y0_xdxdx_y0_xdxdx  
+INFO:     P1_db_y0y0db_y0_xdxdx_y0_xdxdx  
+INFO:     P1_dux_y0y0dux_y0_xdxdx_y0_xdxdx  
+INFO:     P1_dcx_y0y0dcx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ddx_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ddx_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ddx_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ddx_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ddx_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ss_y0y0ss_y0_xdxdx_y0_xdxdx  
+INFO:     P1_sb_y0y0sb_y0_xdxdx_y0_xdxdx  
+INFO:     P1_sux_y0y0sux_y0_xdxdx_y0_xdxdx  
+INFO:     P1_scx_y0y0scx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_sdx_y0y0sdx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ssx_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ssx_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ssx_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ssx_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_ssx_y0y0bbx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bb_y0y0bb_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bux_y0y0bux_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bcx_y0y0bcx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bdx_y0y0bdx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bsx_y0y0bsx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bbx_y0y0gg_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bbx_y0y0uux_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bbx_y0y0ccx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bbx_y0y0ddx_y0_xdxdx_y0_xdxdx  
+INFO:     P1_bbx_y0y0ssx_y0_xdxdx_y0_xdxdx  
+INFO:  Idle: 1,  Running: 0,  Completed: 98 [ current time: 13h19 ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 98 [ current time: 13h19 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 99 [  1.2s  ] 
+INFO: End survey 
+refine 50000
+Creating Jobs
+INFO: Refine results to 50000 
+INFO: Generating 50000.0 unweighted events. 
+sum of cpu time of last step: 4m23s
+INFO: Effective Luminosity 0.09939202128899544 pb^-1 
+INFO: need to improve 24 channels 
+- Current estimate of cross-section: 603670.1862168802 +- 489525.93914986885
+    P1_gg_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0ssx_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_gu_y0y0gu_y0_xdxdx_y0_xdxdx 
+    P1_gc_y0y0gc_y0_xdxdx_y0_xdxdx 
+    P1_gd_y0y0gd_y0_xdxdx_y0_xdxdx 
+    P1_gs_y0y0gs_y0_xdxdx_y0_xdxdx 
+    P1_gb_y0y0gb_y0_xdxdx_y0_xdxdx 
+    P1_uu_y0y0uu_y0_xdxdx_y0_xdxdx 
+    P1_uc_y0y0uc_y0_xdxdx_y0_xdxdx 
+    P1_ud_y0y0ud_y0_xdxdx_y0_xdxdx 
+    P1_us_y0y0us_y0_xdxdx_y0_xdxdx 
+    P1_ub_y0y0ub_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0ssx_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_cc_y0y0cc_y0_xdxdx_y0_xdxdx 
+    P1_cd_y0y0cd_y0_xdxdx_y0_xdxdx 
+    P1_cs_y0y0cs_y0_xdxdx_y0_xdxdx 
+    P1_cb_y0y0cb_y0_xdxdx_y0_xdxdx 
+    P1_cux_y0y0cux_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0ssx_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_dd_y0y0dd_y0_xdxdx_y0_xdxdx 
+    P1_ds_y0y0ds_y0_xdxdx_y0_xdxdx 
+    P1_db_y0y0db_y0_xdxdx_y0_xdxdx 
+    P1_dux_y0y0dux_y0_xdxdx_y0_xdxdx 
+    P1_dcx_y0y0dcx_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0ssx_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_ss_y0y0ss_y0_xdxdx_y0_xdxdx 
+    P1_sb_y0y0sb_y0_xdxdx_y0_xdxdx 
+    P1_sux_y0y0sux_y0_xdxdx_y0_xdxdx 
+    P1_scx_y0y0scx_y0_xdxdx_y0_xdxdx 
+    P1_sdx_y0y0sdx_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_bb_y0y0bb_y0_xdxdx_y0_xdxdx 
+    P1_bux_y0y0bux_y0_xdxdx_y0_xdxdx 
+    P1_bcx_y0y0bcx_y0_xdxdx_y0_xdxdx 
+    P1_bdx_y0y0bdx_y0_xdxdx_y0_xdxdx 
+    P1_bsx_y0y0bsx_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0ssx_y0_xdxdx_y0_xdxdx 
+INFO:  Idle: 45,  Running: 32,  Completed: 0 [ current time: 13h19 ] 
+INFO:  Idle: 44,  Running: 32,  Completed: 1 [  2m 24s  ] 
+INFO:  Idle: 43,  Running: 32,  Completed: 2 [  5m 26s  ] 
+INFO:  Idle: 42,  Running: 32,  Completed: 3 [  5m 40s  ] 
+INFO:  Idle: 41,  Running: 32,  Completed: 4 [  6m 20s  ] 
+INFO:  Idle: 39,  Running: 32,  Completed: 6 [  6m 25s  ] 
+INFO:  Idle: 38,  Running: 32,  Completed: 7 [  14m 10s  ] 
+INFO:  Idle: 37,  Running: 32,  Completed: 8 [  14m 19s  ] 
+INFO:  Idle: 36,  Running: 32,  Completed: 9 [  14m 25s  ] 
+INFO:  Idle: 34,  Running: 32,  Completed: 11 [  25m 27s  ] 
+INFO:  Idle: 32,  Running: 32,  Completed: 13 [  25m 30s  ] 
+INFO:  Idle: 29,  Running: 32,  Completed: 16 [  25m 35s  ] 
+INFO:  Idle: 28,  Running: 32,  Completed: 17 [  25m 40s  ] 
+INFO:  Idle: 24,  Running: 32,  Completed: 21 [  25m 43s  ] 
+INFO:  Idle: 22,  Running: 32,  Completed: 23 [  25m 52s  ] 
+INFO:  Idle: 19,  Running: 32,  Completed: 26 [  25m 57s  ] 
+INFO:  Idle: 17,  Running: 32,  Completed: 28 [  28m 12s  ] 
+INFO:  Idle: 16,  Running: 32,  Completed: 29 [  28m 45s  ] 
+INFO:  Idle: 15,  Running: 32,  Completed: 30 [  32m 20s  ] 
+INFO:  Idle: 14,  Running: 32,  Completed: 31 [  39m 50s  ] 
+INFO:  Idle: 12,  Running: 32,  Completed: 33 [  40m 13s  ] 
+INFO:  Idle: 11,  Running: 32,  Completed: 34 [  41m 11s  ] 
+INFO:  Idle: 10,  Running: 32,  Completed: 35 [  41m 18s  ] 
+INFO:  Idle: 9,  Running: 32,  Completed: 36 [  41m 27s  ] 
+INFO:  Idle: 8,  Running: 32,  Completed: 37 [  43m 26s  ] 
+INFO:  Idle: 7,  Running: 32,  Completed: 38 [  45m 34s  ] 
+INFO:  Idle: 6,  Running: 32,  Completed: 39 [  46m 13s  ] 
+INFO:  Idle: 5,  Running: 32,  Completed: 40 [  47m 49s  ] 
+INFO:  Idle: 4,  Running: 32,  Completed: 41 [  48m 3s  ] 
+INFO:  Idle: 3,  Running: 32,  Completed: 42 [  50m 50s  ] 
+INFO:  Idle: 2,  Running: 32,  Completed: 43 [  51m 8s  ] 
+INFO:  Idle: 1,  Running: 32,  Completed: 44 [  51m 12s  ] 
+INFO:  Idle: 0,  Running: 31,  Completed: 46 [  51m 16s  ] 
+INFO:  Idle: 0,  Running: 28,  Completed: 49 [  51m 23s  ] 
+INFO:  Idle: 0,  Running: 27,  Completed: 50 [  51m 28s  ] 
+INFO:  Idle: 0,  Running: 26,  Completed: 51 [  51m 34s  ] 
+INFO:  Idle: 0,  Running: 24,  Completed: 53 [  51m 41s  ] 
+INFO:  Idle: 0,  Running: 22,  Completed: 55 [  52m 6s  ] 
+INFO:  Idle: 0,  Running: 21,  Completed: 56 [  52m 18s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 58 [  52m 36s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 59 [  52m 42s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 61 [  52m 48s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 62 [  53m 14s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 63 [  53m 17s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 64 [  53m 38s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 65 [  54m 39s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 67 [  54m 48s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 68 [  54m 56s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 69 [  56m 0s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 70 [  59m 41s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 71 [  59m 52s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 75 [  59m 56s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 76 [  1h 0m  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 77 [  1h 0m  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 77 [  1h 0m  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 1h04m06s
+INFO: finish refine 
+refine 50000 --treshold=0.9
+Creating Jobs
+INFO: Refine results to 50000 
+INFO: Generating 50000.0 unweighted events. 
+sum of cpu time of last step: 1h04m06s
+INFO: Effective Luminosity 0.08531909301193452 pb^-1 
+INFO: need to improve 0 channels 
+- Current estimate of cross-section: 703242.3562168803 +- 878.8107013972904
+    P1_gg_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0ssx_y0_xdxdx_y0_xdxdx 
+    P1_gg_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_gu_y0y0gu_y0_xdxdx_y0_xdxdx 
+    P1_gc_y0y0gc_y0_xdxdx_y0_xdxdx 
+    P1_gd_y0y0gd_y0_xdxdx_y0_xdxdx 
+    P1_gs_y0y0gs_y0_xdxdx_y0_xdxdx 
+    P1_gb_y0y0gb_y0_xdxdx_y0_xdxdx 
+    P1_uu_y0y0uu_y0_xdxdx_y0_xdxdx 
+    P1_uc_y0y0uc_y0_xdxdx_y0_xdxdx 
+    P1_ud_y0y0ud_y0_xdxdx_y0_xdxdx 
+    P1_us_y0y0us_y0_xdxdx_y0_xdxdx 
+    P1_ub_y0y0ub_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0ssx_y0_xdxdx_y0_xdxdx 
+    P1_uux_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_cc_y0y0cc_y0_xdxdx_y0_xdxdx 
+    P1_cd_y0y0cd_y0_xdxdx_y0_xdxdx 
+    P1_cs_y0y0cs_y0_xdxdx_y0_xdxdx 
+    P1_cb_y0y0cb_y0_xdxdx_y0_xdxdx 
+    P1_cux_y0y0cux_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0ssx_y0_xdxdx_y0_xdxdx 
+    P1_ccx_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_dd_y0y0dd_y0_xdxdx_y0_xdxdx 
+    P1_ds_y0y0ds_y0_xdxdx_y0_xdxdx 
+    P1_db_y0y0db_y0_xdxdx_y0_xdxdx 
+    P1_dux_y0y0dux_y0_xdxdx_y0_xdxdx 
+    P1_dcx_y0y0dcx_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0ssx_y0_xdxdx_y0_xdxdx 
+    P1_ddx_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_ss_y0y0ss_y0_xdxdx_y0_xdxdx 
+    P1_sb_y0y0sb_y0_xdxdx_y0_xdxdx 
+    P1_sux_y0y0sux_y0_xdxdx_y0_xdxdx 
+    P1_scx_y0y0scx_y0_xdxdx_y0_xdxdx 
+    P1_sdx_y0y0sdx_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_ssx_y0y0bbx_y0_xdxdx_y0_xdxdx 
+    P1_bb_y0y0bb_y0_xdxdx_y0_xdxdx 
+    P1_bux_y0y0bux_y0_xdxdx_y0_xdxdx 
+    P1_bcx_y0y0bcx_y0_xdxdx_y0_xdxdx 
+    P1_bdx_y0y0bdx_y0_xdxdx_y0_xdxdx 
+    P1_bsx_y0y0bsx_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0gg_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0uux_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0ccx_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0ddx_y0_xdxdx_y0_xdxdx 
+    P1_bbx_y0y0ssx_y0_xdxdx_y0_xdxdx 
+INFO:  Idle: 0,  Running: 0,  Completed: 0 [ current time: 14h20 ] 
+INFO: Combining runs 
+sum of cpu time of last step: 1h04m06s
+INFO: finish refine 
+INFO: Combining Events 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   7.032e+05 +- 878.8 pb
+     Nb of events :  50000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
+Splitting .lhe event file for PY8 parallelization...
+Submitting Pythia8 jobs...
+Pythia8 shower jobs: 1 Idle, 31 Running, 0 Done [36 seconds]
+Pythia8 shower jobs: 0 Idle, 32 Running, 0 Done [5m36s]
+Pythia8 shower jobs: 0 Idle, 30 Running, 2 Done [35m58s]
+Pythia8 shower jobs: 0 Idle, 0 Running, 32 Done [37m17s]
+Merging results from the split PY8 runs...
+[1;34mWARNING: Install gnuplot to be able to view the plots generated at :
+    [0m
+INFO: Pythia8 shower finished after 38m27s. 
+INFO: prepare delphes run 
+INFO: Running Delphes 
+INFO: If you are interested in lhco output. please run root2lhco converter. 
+INFO:  or edit bin/internal/run_delphes3 to run the converter automatically. 
+INFO: delphes done 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   7.032e+05 +- 878.8 pb
+     Nb of events :  50000
+ 
+INFO: storing files of previous run 
+INFO: Storing Pythia8 files of previous run 
+INFO: Done 
+quit
+INFO:  
+launch in debug mode
+Test: runCont < 10
+	Saving run in CSV
+
+
+rootPath='../MadGraph/MG5_aMC_v3_5_1/DM_gSg2_only_y0y0/Events/run_01/tag_1_delphes_events.root'
+outputPath='../ToSCP/csv/DM_gSg2_only_y0y0_1.csv'
+
+
+		Events of DM_gSg_only
+
+
+	Initializing param_card
+
+	Reading masses
+
+	Starting generation
+
+	Modifying run_card
+
+	Modifying param_card
+
+
+
+			Generating Events with mx=10.0 and my=100.0
+
+
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.5.1                                    *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/DM_gSg_only/Cards/me5_configuration.txt  
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/input/mg5_configuration.txt  
+INFO: load configuration from /home/jmduarteq/MadGraph/MG5_aMC_v3_5_1/DM_gSg_only/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import command gen_events.sh
+generate_events
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/===========================================================================\
+| 1. Choose the shower/hadronization program   [1m  shower[0m = [31mOFF[0m               |
+| 2. Choose the detector simulation program    [1mdetector[0m = [31mOFF[0m               |
+| 3. Choose an analysis package (plot/convert) [1manalysis[0m = [01mNot Avail.[0m        |
+| 4. Decay onshell particles                   [1m madspin[0m = [31mOFF[0m               |
+| 5. Add weights to events for new hypp.       [1mreweight[0m = [31mOFF[0m               |
+\===========================================================================/
+Either type the switch number (1 to 5) to change its setting,
+Set any switch explicitly (e.g. type 'shower=Pythia8' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse EOF value[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param   : [32mparam_card.dat[0m                               |
+|  [31m2[0m. run     : [32mrun_card.dat[0m                                 |
+|  [31m3[0m. pythia8 : [32mpythia8_card.dat[0m                             |
+|  [31m4[0m. delphes : [32mdelphes_card.dat[0m                             |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, 3, pythia8, 4, enter path, ... ]
+[1mThe answer to the previous question is not set in your input file[0m
+[1mUse 0 value[0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.13 [0m
+Generating 50000 events with run name run_01
+survey  run_01 
+INFO: compile directory 
+compile Source Directory
+Using random number seed offset = 10970
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+INFO: Compiling for process 1/61. 
+INFO:     P1_gg_y0gg_y0_xdxdx  
+INFO: Compiling for process 2/61. 
+INFO:     P1_gg_y0uux_y0_xdxdx  
+INFO: Compiling for process 3/61. 
+INFO:     P1_gg_y0ccx_y0_xdxdx  
+INFO: Compiling for process 4/61. 
+INFO:     P1_gg_y0ddx_y0_xdxdx  
+INFO: Compiling for process 5/61. 
+INFO:     P1_gg_y0ssx_y0_xdxdx  
+INFO: Compiling for process 6/61. 
+INFO:     P1_gg_y0bbx_y0_xdxdx  
+INFO: Compiling for process 7/61. 
+INFO:     P1_gu_y0gu_y0_xdxdx  
+INFO: Compiling for process 8/61. 
+INFO:     P1_gc_y0gc_y0_xdxdx  
+INFO: Compiling for process 9/61. 
+INFO:     P1_gd_y0gd_y0_xdxdx  
+INFO: Compiling for process 10/61. 
+INFO:     P1_gs_y0gs_y0_xdxdx  
+INFO: Compiling for process 11/61. 
+INFO:     P1_gb_y0gb_y0_xdxdx  
+INFO: Compiling for process 12/61. 
+INFO:     P1_uu_y0uu_y0_xdxdx  
+INFO: Compiling for process 13/61. 
+INFO:     P1_uc_y0uc_y0_xdxdx  
+INFO: Compiling for process 14/61. 
+INFO:     P1_ud_y0ud_y0_xdxdx  
+INFO: Compiling for process 15/61. 
+INFO:     P1_us_y0us_y0_xdxdx  
+INFO: Compiling for process 16/61. 
+INFO:     P1_ub_y0ub_y0_xdxdx  
+INFO: Compiling for process 17/61. 
+INFO:     P1_uux_y0gg_y0_xdxdx  
+INFO: Compiling for process 18/61. 
+INFO:     P1_uux_y0ccx_y0_xdxdx  
+INFO: Compiling for process 19/61. 
+INFO:     P1_uux_y0ddx_y0_xdxdx  
+INFO: Compiling for process 20/61. 
+INFO:     P1_uux_y0ssx_y0_xdxdx  
+INFO: Compiling for process 21/61. 
+INFO:     P1_uux_y0bbx_y0_xdxdx  
+INFO: Compiling for process 22/61. 
+INFO:     P1_cc_y0cc_y0_xdxdx  
+INFO: Compiling for process 23/61. 
+INFO:     P1_cd_y0cd_y0_xdxdx  
+INFO: Compiling for process 24/61. 
+INFO:     P1_cs_y0cs_y0_xdxdx  
+INFO: Compiling for process 25/61. 
+INFO:     P1_cb_y0cb_y0_xdxdx  
+INFO: Compiling for process 26/61. 
+INFO:     P1_cux_y0cux_y0_xdxdx  
+INFO: Compiling for process 27/61. 
+INFO:     P1_ccx_y0gg_y0_xdxdx  
+INFO: Compiling for process 28/61. 
+INFO:     P1_ccx_y0uux_y0_xdxdx  
+INFO: Compiling for process 29/61. 
+INFO:     P1_ccx_y0ddx_y0_xdxdx  
+INFO: Compiling for process 30/61. 
+INFO:     P1_ccx_y0ssx_y0_xdxdx  
+INFO: Compiling for process 31/61. 
+INFO:     P1_ccx_y0bbx_y0_xdxdx  
+INFO: Compiling for process 32/61. 
+INFO:     P1_dd_y0dd_y0_xdxdx  
+INFO: Compiling for process 33/61. 
+INFO:     P1_ds_y0ds_y0_xdxdx  
+INFO: Compiling for process 34/61. 
+INFO:     P1_db_y0db_y0_xdxdx  
+INFO: Compiling for process 35/61. 
+INFO:     P1_dux_y0dux_y0_xdxdx  
+INFO: Compiling for process 36/61. 
+INFO:     P1_dcx_y0dcx_y0_xdxdx  
+INFO: Compiling for process 37/61. 
+INFO:     P1_ddx_y0gg_y0_xdxdx  
+INFO: Compiling for process 38/61. 
+INFO:     P1_ddx_y0uux_y0_xdxdx  
+INFO: Compiling for process 39/61. 
+INFO:     P1_ddx_y0ccx_y0_xdxdx  
+INFO: Compiling for process 40/61. 
+INFO:     P1_ddx_y0ssx_y0_xdxdx  
+INFO: Compiling for process 41/61. 
+INFO:     P1_ddx_y0bbx_y0_xdxdx  
+INFO: Compiling for process 42/61. 
+INFO:     P1_ss_y0ss_y0_xdxdx  
+INFO: Compiling for process 43/61. 
+INFO:     P1_sb_y0sb_y0_xdxdx  
+INFO: Compiling for process 44/61. 
+INFO:     P1_sux_y0sux_y0_xdxdx  
+INFO: Compiling for process 45/61. 
+INFO:     P1_scx_y0scx_y0_xdxdx  
+INFO: Compiling for process 46/61. 
+INFO:     P1_sdx_y0sdx_y0_xdxdx  
+INFO: Compiling for process 47/61. 
+INFO:     P1_ssx_y0gg_y0_xdxdx  
+INFO: Compiling for process 48/61. 
+INFO:     P1_ssx_y0uux_y0_xdxdx  
+INFO: Compiling for process 49/61. 
+INFO:     P1_ssx_y0ccx_y0_xdxdx  
+INFO: Compiling for process 50/61. 
+INFO:     P1_ssx_y0ddx_y0_xdxdx  
+INFO: Compiling for process 51/61. 
+INFO:     P1_ssx_y0bbx_y0_xdxdx  
+INFO: Compiling for process 52/61. 
+INFO:     P1_bb_y0bb_y0_xdxdx  
+INFO: Compiling for process 53/61. 
+INFO:     P1_bux_y0bux_y0_xdxdx  
+INFO: Compiling for process 54/61. 
+INFO:     P1_bcx_y0bcx_y0_xdxdx  
+INFO: Compiling for process 55/61. 
+INFO:     P1_bdx_y0bdx_y0_xdxdx  
+INFO: Compiling for process 56/61. 
+INFO:     P1_bsx_y0bsx_y0_xdxdx  
+INFO: Compiling for process 57/61. 
+INFO:     P1_bbx_y0gg_y0_xdxdx  
+INFO: Compiling for process 58/61. 
+INFO:     P1_bbx_y0uux_y0_xdxdx  
+INFO: Compiling for process 59/61. 
+INFO:     P1_bbx_y0ccx_y0_xdxdx  
+INFO: Compiling for process 60/61. 
+INFO:     P1_bbx_y0ddx_y0_xdxdx  
+INFO: Compiling for process 61/61. 
+INFO:     P1_bbx_y0ssx_y0_xdxdx  
+INFO:     P1_gg_y0gg_y0_xdxdx  
+INFO:     P1_gg_y0uux_y0_xdxdx  
+INFO:     P1_gg_y0ccx_y0_xdxdx  
+INFO:     P1_gg_y0ddx_y0_xdxdx  
+INFO:     P1_gg_y0ssx_y0_xdxdx  
+INFO:     P1_gg_y0bbx_y0_xdxdx  
+INFO:     P1_gu_y0gu_y0_xdxdx  
+INFO:     P1_gc_y0gc_y0_xdxdx  
+INFO:     P1_gd_y0gd_y0_xdxdx  
+INFO:     P1_gs_y0gs_y0_xdxdx  
+INFO:     P1_gb_y0gb_y0_xdxdx  
+INFO:     P1_uu_y0uu_y0_xdxdx  
+INFO:     P1_uc_y0uc_y0_xdxdx  
+INFO:     P1_ud_y0ud_y0_xdxdx  
+INFO:     P1_us_y0us_y0_xdxdx  
+INFO:     P1_ub_y0ub_y0_xdxdx  
+INFO:     P1_uux_y0gg_y0_xdxdx  
+INFO:     P1_uux_y0ccx_y0_xdxdx  
+INFO:     P1_uux_y0ddx_y0_xdxdx  
+INFO:     P1_uux_y0ssx_y0_xdxdx  
+INFO:     P1_uux_y0bbx_y0_xdxdx  
+INFO:     P1_cc_y0cc_y0_xdxdx  
+INFO:     P1_cd_y0cd_y0_xdxdx  
+INFO:     P1_cs_y0cs_y0_xdxdx  
+INFO:     P1_cb_y0cb_y0_xdxdx  
+INFO:     P1_cux_y0cux_y0_xdxdx  
+INFO:     P1_ccx_y0gg_y0_xdxdx  
+INFO:     P1_ccx_y0uux_y0_xdxdx  
+INFO:     P1_ccx_y0ddx_y0_xdxdx  
+INFO:     P1_ccx_y0ssx_y0_xdxdx  
+INFO:     P1_ccx_y0bbx_y0_xdxdx  
+INFO:     P1_dd_y0dd_y0_xdxdx  
+INFO:     P1_ds_y0ds_y0_xdxdx  
+INFO:     P1_db_y0db_y0_xdxdx  
+INFO:     P1_dux_y0dux_y0_xdxdx  
+INFO:     P1_dcx_y0dcx_y0_xdxdx  
+INFO:     P1_ddx_y0gg_y0_xdxdx  
+INFO:     P1_ddx_y0uux_y0_xdxdx  
+INFO:     P1_ddx_y0ccx_y0_xdxdx  
+INFO:     P1_ddx_y0ssx_y0_xdxdx  
+INFO:     P1_ddx_y0bbx_y0_xdxdx  
+INFO:     P1_ss_y0ss_y0_xdxdx  
+INFO:     P1_sb_y0sb_y0_xdxdx  
+INFO:     P1_sux_y0sux_y0_xdxdx  
+INFO:     P1_scx_y0scx_y0_xdxdx  
+INFO:     P1_sdx_y0sdx_y0_xdxdx  
+INFO:     P1_ssx_y0gg_y0_xdxdx  
+INFO:     P1_ssx_y0uux_y0_xdxdx  
+INFO:     P1_ssx_y0ccx_y0_xdxdx  
+INFO:     P1_ssx_y0ddx_y0_xdxdx  
+INFO:     P1_ssx_y0bbx_y0_xdxdx  
+INFO:     P1_bb_y0bb_y0_xdxdx  
+INFO:     P1_bux_y0bux_y0_xdxdx  
+INFO:     P1_bcx_y0bcx_y0_xdxdx  
+INFO:     P1_bdx_y0bdx_y0_xdxdx  
+INFO:     P1_bsx_y0bsx_y0_xdxdx  
+INFO:     P1_bbx_y0gg_y0_xdxdx  
+INFO:     P1_bbx_y0uux_y0_xdxdx  
+INFO:     P1_bbx_y0ccx_y0_xdxdx  
+INFO:     P1_bbx_y0ddx_y0_xdxdx  
+INFO:     P1_bbx_y0ssx_y0_xdxdx  
+INFO:  Idle: 1,  Running: 0,  Completed: 94 [ current time: 15h50 ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 94 [ current time: 15h50 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 95 [  0.57s  ] 
+INFO: End survey 
+refine 50000
+Creating Jobs
+INFO: Refine results to 50000 
+INFO: Generating 50000.0 unweighted events. 
+sum of cpu time of last step: 2m14s
+INFO: Effective Luminosity 54.286226124775126 pb^-1 
+INFO: need to improve 22 channels 
+- Current estimate of cross-section: 1105.2527368930002 +- 35.21276836094214
+    P1_gg_y0gg_y0_xdxdx 
+    P1_gg_y0uux_y0_xdxdx 
+    P1_gg_y0ccx_y0_xdxdx 
+    P1_gg_y0ddx_y0_xdxdx 
+    P1_gg_y0ssx_y0_xdxdx 
+    P1_gg_y0bbx_y0_xdxdx 
+    P1_gu_y0gu_y0_xdxdx 
+    P1_gc_y0gc_y0_xdxdx 
+    P1_gd_y0gd_y0_xdxdx 
+    P1_gs_y0gs_y0_xdxdx 
+    P1_gb_y0gb_y0_xdxdx 
+    P1_uu_y0uu_y0_xdxdx 
+    P1_uc_y0uc_y0_xdxdx 
+    P1_ud_y0ud_y0_xdxdx 
+    P1_us_y0us_y0_xdxdx 
+    P1_ub_y0ub_y0_xdxdx 
+    P1_uux_y0gg_y0_xdxdx 
+    P1_uux_y0ccx_y0_xdxdx 
+    P1_uux_y0ddx_y0_xdxdx 
+    P1_uux_y0ssx_y0_xdxdx 
+    P1_uux_y0bbx_y0_xdxdx 
+    P1_cc_y0cc_y0_xdxdx 
+    P1_cd_y0cd_y0_xdxdx 
+    P1_cs_y0cs_y0_xdxdx 
+    P1_cb_y0cb_y0_xdxdx 
+    P1_cux_y0cux_y0_xdxdx 
+    P1_ccx_y0gg_y0_xdxdx 
+    P1_ccx_y0uux_y0_xdxdx 
+    P1_ccx_y0ddx_y0_xdxdx 
+    P1_ccx_y0ssx_y0_xdxdx 
+    P1_ccx_y0bbx_y0_xdxdx 
+    P1_dd_y0dd_y0_xdxdx 
+    P1_ds_y0ds_y0_xdxdx 
+    P1_db_y0db_y0_xdxdx 
+    P1_dux_y0dux_y0_xdxdx 
+    P1_dcx_y0dcx_y0_xdxdx 
+    P1_ddx_y0gg_y0_xdxdx 
+    P1_ddx_y0uux_y0_xdxdx 
+    P1_ddx_y0ccx_y0_xdxdx 
+    P1_ddx_y0ssx_y0_xdxdx 
+    P1_ddx_y0bbx_y0_xdxdx 
+    P1_ss_y0ss_y0_xdxdx 
+    P1_sb_y0sb_y0_xdxdx 
+    P1_sux_y0sux_y0_xdxdx 
+    P1_scx_y0scx_y0_xdxdx 
+    P1_sdx_y0sdx_y0_xdxdx 
+    P1_ssx_y0gg_y0_xdxdx 
+    P1_ssx_y0uux_y0_xdxdx 
+    P1_ssx_y0ccx_y0_xdxdx 
+    P1_ssx_y0ddx_y0_xdxdx 
+    P1_ssx_y0bbx_y0_xdxdx 
+    P1_bb_y0bb_y0_xdxdx 
+    P1_bux_y0bux_y0_xdxdx 
+    P1_bcx_y0bcx_y0_xdxdx 
+    P1_bdx_y0bdx_y0_xdxdx 
+    P1_bsx_y0bsx_y0_xdxdx 
+    P1_bbx_y0gg_y0_xdxdx 
+    P1_bbx_y0uux_y0_xdxdx 
+    P1_bbx_y0ccx_y0_xdxdx 
+    P1_bbx_y0ddx_y0_xdxdx 
+    P1_bbx_y0ssx_y0_xdxdx 
+INFO:  Idle: 42,  Running: 32,  Completed: 0 [ current time: 15h50 ] 
+INFO:  Idle: 41,  Running: 32,  Completed: 1 [  4m 33s  ] 
+INFO:  Idle: 38,  Running: 32,  Completed: 4 [  4m 36s  ] 
+INFO:  Idle: 37,  Running: 32,  Completed: 5 [  4m 40s  ] 
+INFO:  Idle: 34,  Running: 32,  Completed: 8 [  4m 44s  ] 
+INFO:  Idle: 30,  Running: 32,  Completed: 12 [  4m 49s  ] 
+INFO:  Idle: 23,  Running: 32,  Completed: 19 [  4m 52s  ] 
+INFO:  Idle: 21,  Running: 32,  Completed: 21 [  4m 58s  ] 
+INFO:  Idle: 18,  Running: 32,  Completed: 24 [  5m 1s  ] 
+INFO:  Idle: 16,  Running: 32,  Completed: 26 [  9m 33s  ] 
+INFO:  Idle: 15,  Running: 32,  Completed: 27 [  10m 2s  ] 
+INFO:  Idle: 14,  Running: 32,  Completed: 28 [  10m 6s  ] 
+INFO:  Idle: 12,  Running: 32,  Completed: 30 [  10m 9s  ] 
+INFO:  Idle: 8,  Running: 32,  Completed: 34 [  10m 15s  ] 
+INFO:  Idle: 7,  Running: 32,  Completed: 35 [  10m 18s  ] 
+INFO:  Idle: 6,  Running: 32,  Completed: 36 [  10m 23s  ] 
+INFO:  Idle: 4,  Running: 32,  Completed: 38 [  10m 29s  ] 
+INFO:  Idle: 3,  Running: 32,  Completed: 39 [  10m 33s  ] 
+INFO:  Idle: 1,  Running: 32,  Completed: 41 [  10m 40s  ] 
+INFO:  Idle: 0,  Running: 32,  Completed: 42 [  10m 51s  ] 
+INFO:  Idle: 0,  Running: 31,  Completed: 43 [  11m 5s  ] 
+INFO:  Idle: 0,  Running: 30,  Completed: 44 [  11m 14s  ] 
+INFO:  Idle: 0,  Running: 29,  Completed: 45 [  11m 23s  ] 
+INFO:  Idle: 0,  Running: 28,  Completed: 46 [  11m 33s  ] 
+INFO:  Idle: 0,  Running: 27,  Completed: 47 [  11m 42s  ] 
+INFO:  Idle: 0,  Running: 26,  Completed: 48 [  12m 4s  ] 
+INFO:  Idle: 0,  Running: 24,  Completed: 50 [  12m 35s  ] 
+INFO:  Idle: 0,  Running: 23,  Completed: 51 [  12m 57s  ] 
+INFO:  Idle: 0,  Running: 22,  Completed: 52 [  13m 10s  ] 
+INFO:  Idle: 0,  Running: 21,  Completed: 53 [  14m 40s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 55 [  14m 44s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 62 [  14m 48s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 65 [  14m 51s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 66 [  15m 7s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 67 [  16m 6s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 69 [  16m 31s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 70 [  17m 7s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 72 [  17m 10s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 73 [  17m 17s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 74 [  18m 2s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 74 [  18m 2s  ] 
+INFO: Combining runs 
+sum of cpu time of last step: 20m44s
+INFO: finish refine 
+refine 50000 --treshold=0.9
+No need for second refine due to stability of cross-section
+INFO: Combining Events 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   1172 +- 1.454 pb
+     Nb of events :  50000
+ 
+store_events
+INFO: Storing parton level results 
+INFO: End Parton 
+reweight -from_cards
+decay_events -from_cards
+INFO: [92mRunning Pythia8 [arXiv:1410.3012][0m 
+Splitting .lhe event file for PY8 parallelization...
+Submitting Pythia8 jobs...
+Pythia8 shower jobs: 1 Idle, 31 Running, 0 Done [27 seconds]
+Pythia8 shower jobs: 0 Idle, 32 Running, 0 Done [5m27s]
+Pythia8 shower jobs: 0 Idle, 25 Running, 7 Done [32m05s]
+Pythia8 shower jobs: 0 Idle, 0 Running, 32 Done [33m18s]
+Merging results from the split PY8 runs...
+[1;34mWARNING: Install gnuplot to be able to view the plots generated at :
+    [0m
+INFO: Pythia8 shower finished after 34m24s. 
+INFO: prepare delphes run 
+INFO: Running Delphes 
+INFO: If you are interested in lhco output. please run root2lhco converter. 
+INFO:  or edit bin/internal/run_delphes3 to run the converter automatically. 
+INFO: delphes done 
+  === Results Summary for run: run_01 tag: tag_1 ===
+
+     Cross-section :   1172 +- 1.454 pb
+     Nb of events :  50000
+ 
+INFO: storing files of previous run 
+INFO: Storing Pythia8 files of previous run 
+INFO: Done 
+quit
+INFO:  
+launch in debug mode
+Test: runCont < 10
+	Saving run in CSV
+
+
+rootPath='../MadGraph/MG5_aMC_v3_5_1/DM_gSg_only/Events/run_01/tag_1_delphes_events.root'
+outputPath='../ToSCP/csv/DM_gSg_only_1.csv'

@@ -3,3 +3,4 @@
 generate_events
 shower=Pythia8
 detector=delphes
+done

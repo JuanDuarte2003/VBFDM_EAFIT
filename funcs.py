@@ -106,6 +106,8 @@ def invariant_mass(row):
 
 def azimuthal_difference(row):
     deltaPhi = abs(row['jet_phi0'] - row['jet_phi1'])
+    if deltaPhi > np.pi:
+        deltaPhi = abs(deltaPhi - 2*np.pi)
     return deltaPhi
 
 def pseudorapidity_separation(row):
@@ -120,12 +122,10 @@ def plotObservable(datas, names, variable, save=True, plot=False, folder='Plots/
     numDatas = len(datas)
 
     variableDict = {
-        'Azim_diff' : [azimuthal_difference, r'$\left|\Delta\phi\right|$'],
-        'Inv_mass' : [invariant_mass, r'$m_{jj}$'],
-        'Pseudorapidity' : [pseudorapidity_separation, r'$\left|\Delta\eta\right|$']
+        'Azim_diff' : [azimuthal_difference, r'$\left|\Delta\phi\right|$', (0, np.pi)],
+        'Inv_mass' : [invariant_mass, r'$m_{jj}$ [GeV]', (0,3000)],
+        'Pseudorapidity' : [pseudorapidity_separation, r'$\left|\Delta\eta\right|$', (0,10)]
     }
-
-
 
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -149,6 +149,7 @@ def plotObservable(datas, names, variable, save=True, plot=False, folder='Plots/
     ax.grid()
     ax.tick_params(axis='x',labelsize=20)
     ax.tick_params(axis='y',labelsize=20)
+    ax.set_xlim(variableDict[variable][2])
 
     if save: plt.savefig(f'{folder}{variable}.png',dpi=dpi)
     if plot: plt.show()

@@ -130,11 +130,19 @@ def plotObservable(datas, names, variable, save=True, plot=False, folder='Plots/
     fig = plt.figure()
     ax = fig.add_subplot(111)
 
+
     for i in range(numDatas):
-        datas[i][variable] = datas[i].apply(variableDict[variable][0], axis=1)
-        rango = np.linspace(datas[i][variable].min(), datas[i][variable].max())
-        color = next(ax._get_lines.prop_cycler)["color"]
-        ax.hist(datas[i][variable], bins=rango, density=True, color=color, edgecolor=color, fc="None", lw=1, label=names[i])
+        if names[i] == 'Z+Jets' or names[i] == 'W+Jets' :
+            datas[i][variable] = datas[i].apply(variableDict[variable][0], axis=1)
+            rango = np.linspace(datas[i][variable].min(), datas[i][variable].max())
+            #color = next(ax._get_lines.prop_cycler)["color"]
+            #ax.hist(datas[i][variable], bins=rango, density=True, color=color, edgecolor=color, fc="None", lw=1, label=names[i])
+            ax.hist(datas[i][variable], bins=rango, density=True, label=names[i])
+        else:
+            datas[i][variable] = datas[i].apply(variableDict[variable][0], axis=1)
+            rango = np.linspace(datas[i][variable].min(), datas[i][variable].max())
+            color = next(ax._get_lines.prop_cycler)["color"]
+            ax.hist(datas[i][variable], bins=rango, density=True, color=color, edgecolor=color, fc="None", lw=1, label=names[i])
     
     ax.legend(fontsize=20)
     ax.set_title(variableDict[variable][1], fontsize=25)

@@ -118,8 +118,15 @@ def total_henergy(row, n_jets=4):
     H = sum([row['jet_pt{i}'] for i in range(n_jets)])
     return H
 
-def plotObservable(datas, names, variable, save=True, plot=False, folder='Plots/', dpi=500):
+def plotObservable(datas, names, variable, save=True, plot=False, folder='Plots/', dpi=500, selection=False, query=''):
     numDatas = len(datas)
+
+    if selection:
+        for i in range(numDatas):
+            if names[i] == 'Z+Jets' or names[i] == 'W+Jets':
+                continue
+            else:
+                datas[i].query(query, inplace=True)
 
     variableDict = {
         'Azim_diff' : [azimuthal_difference, r'$\left|\Delta\phi\right|$', (0, np.pi)],

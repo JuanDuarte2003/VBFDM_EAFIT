@@ -123,10 +123,10 @@ def plotObservable(datas, names, variable, save=True, plot=False, folder='Plots/
 
     if selection:
         for i in range(numDatas):
-            if names[i] == 'Z+Jets' or names[i] == 'W+Jets':
-                continue
-            else:
-                datas[i].query(query, inplace=True)
+            #if names[i] == 'Z+Jets' or names[i] == 'W+Jets':
+            #    continue
+            #else:
+            datas[i].query(query, inplace=True)
 
     variableDict = {
         'Azim_diff' : [azimuthal_difference, r'$\left|\Delta\phi\right|$', (0, np.pi)],
@@ -137,19 +137,29 @@ def plotObservable(datas, names, variable, save=True, plot=False, folder='Plots/
     fig = plt.figure()
     ax = fig.add_subplot(111)
 
+    majorValue = 0
 
     for i in range(numDatas):
         if names[i] == 'Z+Jets' or names[i] == 'W+Jets' :
-            datas[i][variable] = datas[i].apply(variableDict[variable][0], axis=1)
+            if not variable in datas[i].columns:
+                datas[i][variable] = datas[i].apply(variableDict[variable][0], axis=1)
             rango = np.linspace(datas[i][variable].min(), datas[i][variable].max())
             #color = next(ax._get_lines.prop_cycler)["color"]
             #ax.hist(datas[i][variable], bins=rango, density=True, color=color, edgecolor=color, fc="None", lw=1, label=names[i])
-            ax.hist(datas[i][variable], bins=rango, density=True, label=names[i])
+            yvalues, bins, hist = ax.hist(datas[i][variable], bins=rango, density=True, label=names[i])
+
         else:
-            datas[i][variable] = datas[i].apply(variableDict[variable][0], axis=1)
+            if not variable in datas[i].columns:
+                datas[i][variable] = datas[i].apply(variableDict[variable][0], axis=1)
             rango = np.linspace(datas[i][variable].min(), datas[i][variable].max())
             color = next(ax._get_lines.prop_cycler)["color"]
-            ax.hist(datas[i][variable], bins=rango, density=True, color=color, edgecolor=color, fc="None", lw=1, label=names[i])
+            yvalues, bins, hist = ax.hist(datas[i][variable], bins=rango, density=True, color=color, edgecolor=color, fc="None", lw=1, label=names[i])
+        
+        # Normalization to total number of events
+        for item in hist:
+            item.set_height(item.get_height()/sum(yvalues))
+        
+        majorValue = yvalues.max()/sum(yvalues) if yvalues.max()/sum(yvalues) > majorValue else majorValue
     
     ax.legend(fontsize=20)
     ax.set_title(variableDict[variable][1], fontsize=25)
@@ -157,7 +167,12 @@ def plotObservable(datas, names, variable, save=True, plot=False, folder='Plots/
     ax.tick_params(axis='x',labelsize=20)
     ax.tick_params(axis='y',labelsize=20)
     ax.set_xlim(variableDict[variable][2])
+    ax.set_ylim(0,majorValue)
 
-    if save: plt.savefig(f'{folder}{variable}.png',dpi=dpi)
+    if selection:
+        f'{folder}{variable}_withQuery.png'
+    else:
+        filePath = f'{folder}{variable}.png'
+    if save: plt.savefig(filePath,dpi=dpi)
     if plot: plt.show()
     plt.close(fig)

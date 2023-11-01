@@ -84,19 +84,19 @@ def PlotMissingETVariable(data, save=True, plot=False, folder='Plots/', dpi=500)
     if save: plt.savefig(f'{folder}missinget.png',dpi=dpi)
     plt.close(fig)
 
-def makePlots(data, folder):
+def makePlots(data, folder, save=True, plot=False):
     # pt
-    PlotCinematicVariable(data, 'pt', r'$p_{T}$', folder=folder)
+    PlotCinematicVariable(data, 'pt', r'$p_{T}$', folder=folder, save=save, plot=plot)
     # eta
-    PlotCinematicVariable(data, 'eta', r'$\eta$', folder=folder)
+    PlotCinematicVariable(data, 'eta', r'$\eta$', folder=folder, save=save, plot=plot)
     # phi
-    PlotCinematicVariable(data, 'phi', r'$\phi$', folder=folder)
+    PlotCinematicVariable(data, 'phi', r'$\phi$', folder=folder, save=save, plot=plot)
     # mass
-    PlotCinematicVariable(data, 'mass', r'$m$', folder=folder)
+    PlotCinematicVariable(data, 'mass', r'$m$', folder=folder, save=save, plot=plot)
     # Eta Phi Plane
-    PlotEtaPhiPlane(data, folder=folder)
+    PlotEtaPhiPlane(data, folder=folder, save=save, plot=plot)
     # missinget
-    PlotMissingETVariable(data, folder=folder)
+    PlotMissingETVariable(data, folder=folder, save=save, plot=plot)
 
 def invariant_mass(row):
     m = np.sqrt(2 * row['jet_pt0'] * row['jet_pt1'] * \

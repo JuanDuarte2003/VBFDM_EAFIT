@@ -147,6 +147,11 @@ def total_henergy(row, n_jets=4):
     return H
 
 
+def pseudorapidity_product(row):
+    etaProd = row["jet_eta0"] * row["jet_eta1"]
+    return etaProd
+
+
 def plotObservable(
     datas,
     names,
@@ -239,3 +244,104 @@ def plotObservable(
     if plot:
         plt.show()
     plt.close(fig)
+
+
+# Significance Analysis
+
+
+def find_significance(
+    cases,
+    SG,
+    BG,
+    cut_var,
+    mass_points=2,
+    use_weights=False,
+    SG_weights={},
+    BG_weights=[],
+    size=100,
+    set_lims=False,
+    lims=(0, 1),
+    cond=">",
+):
+    var_values = {}
+    Z = {}  # outputs
+    nBG = len(BG)  # number of backgrounds
+
+    if not use_weights:
+        BG_weights = np.ones(nBG)
+
+    for i in cases:
+        var_values[i] = []
+        Z[i] = []
+
+        if not use_weights:
+            SG_weights[i] = []
+
+        for j in range(mass_points):
+            if not use_weights:
+                SG_weights[i].append(1.0)
+
+            # Limits
+            infLim = SG[i][j][cut_var].min()
+            supLim = SG[i][j][cut_var].max()
+            if set_lims:
+                infLim = lims[0] if infLim < lims[0] else infLim
+                supLim = lims[1] if supLim > lims[1] else supLim
+
+            var_values[i].append(np.linspace(infLim, supLim, size))
+            Z[i].append(np.zeros(len(var_values[i][j])))
+
+            for k in range(len(var_values[i][j])):
+                if cond == ">":
+                    # Signal
+                    S = (
+                        SG[i][j][SG[i][j][cut_var] > var_values[i][j][k]].shape[0]
+                        * SG_weights[i][j]
+                    )
+                    # Background
+                    B = sum(
+                        [
+                            BG[ii][BG[ii][cut_var] > var_values[i][j][k]].shape[0]
+                            * BG_weights[ii]
+                            for ii in range(len(BG))
+                        ]
+                    )
+                elif cond == "<":
+                    # Signal
+                    S = (
+                        SG[i][j][SG[i][j][cut_var] < var_values[i][j][k]].shape[0]
+                        * SG_weights[i][j]
+                    )
+                    # Background
+                    B = sum(
+                        [
+                            BG[ii][BG[ii][cut_var] < var_values[i][j][k]].shape[0]
+                            * BG_weights[ii]
+                            for ii in range(len(BG))
+                        ]
+                    )
+                else:
+                    return KeyError
+
+                Z[i][j][k] = S / np.sqrt(S + B)
+
+    return Z, var_values
+
+
+def get_cuts(cases, Z, var_values, cut_var, var_unit, massLabels, printResults=False):
+    massPoints = len(massLabels)
+    cuts = {}
+    for i in cases:
+        if printResults:
+            print("case :", i)
+        cuts[i] = []
+        for j in range(massPoints):
+            maxZ = max(Z[i][j])
+            max_index = Z[i][j].argmax()
+            cut = var_values[i][j][max_index]
+            cuts[i].append(cut)
+            if printResults:
+                print(f"\tmass point: {massLabels[j]}")
+                print(f"\t\tmax significance: {maxZ}")
+                print(f"\t\tcut: {cut_var} > {round(cut, 3)}{var_unit}")
+    return cuts

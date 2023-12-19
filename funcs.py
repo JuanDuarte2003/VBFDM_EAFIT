@@ -122,7 +122,7 @@ def invariant_mass(row):
         2
         * row["jet_pt0"]
         * row["jet_pt1"]
-        * (
+        * abs(
             np.cosh(row["jet_eta0"] - row["jet_eta1"])
             - np.cosh(row["jet_phi0"] - row["jet_phi1"])
         )
@@ -142,8 +142,8 @@ def pseudorapidity_separation(row):
     return deltaEta
 
 
-def total_henergy(row, n_jets=4):
-    H = sum([row["jet_pt{i}"] for i in range(n_jets)])
+def total_henergy(row, n_jets=3):
+    H = sum([row["jet_pt{_i}"] for _i in range(n_jets)])
     return H
 
 

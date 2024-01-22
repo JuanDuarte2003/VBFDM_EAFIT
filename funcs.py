@@ -123,8 +123,7 @@ def invariant_mass(row):
         * row["jet_pt0"]
         * row["jet_pt1"]
         * abs(
-            np.cosh(row["jet_eta0"] - row["jet_eta1"])
-            - np.cosh(row["jet_phi0"] - row["jet_phi1"])
+            np.cosh(pseudorapidity_separation(row)) - np.cosh(azimuthal_difference(row))
         )
     )
     return m
@@ -187,6 +186,10 @@ def plotObservable(
 
     majorValue = 0
 
+    prop_cycle = plt.rcParams["axes.prop_cycle"]
+    colors = prop_cycle.by_key()["color"]
+    colorsIter = iter(colors)
+
     for i in range(numDatas):
         if names[i] == "Z+Jets" or names[i] == "W+Jets":
             if not variable in datas[i].columns:
@@ -202,7 +205,7 @@ def plotObservable(
             if not variable in datas[i].columns:
                 datas[i][variable] = datas[i].apply(variableDict[variable][0], axis=1)
             rango = np.linspace(datas[i][variable].min(), datas[i][variable].max())
-            color = next(ax._get_lines.prop_cycler)["color"]
+            color = next(colorsIter)
             yvalues, bins, hist = ax.hist(
                 datas[i][variable],
                 bins=rango,

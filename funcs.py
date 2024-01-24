@@ -122,9 +122,7 @@ def invariant_mass(row):
         2
         * row["jet_pt0"]
         * row["jet_pt1"]
-        * abs(
-            np.cosh(pseudorapidity_separation(row)) - np.cosh(azimuthal_difference(row))
-        )
+        * abs(np.cosh(row["Delta_rapidity"]) - np.cosh(row["Delta_phi"]))
     )
     return m
 
@@ -151,6 +149,21 @@ def pseudorapidity_product(row):
     return etaProd
 
 
+def construct_variables(data):
+    funcVariables = [
+        azimuthal_difference,
+        pseudorapidity_separation,
+        invariant_mass,
+        pseudorapidity_product,
+    ]
+    variables = ["Delta_phi", "Delta_rapidity", "Inv_mass", "Rapidity_prod"]
+
+    for i in range(len(variables)):
+        data[variables[i]] = data.apply(funcVariables[i], axis=1)
+
+    return data
+
+
 def plotObservable(
     datas,
     names,
@@ -172,9 +185,9 @@ def plotObservable(
             datas[i].query(query, inplace=True)
 
     variableDict = {
-        "Azim_diff": [azimuthal_difference, r"$\left|\Delta\phi\right|$", (0, np.pi)],
+        "Delta_phi": [azimuthal_difference, r"$\left|\Delta\phi\right|$", (0, np.pi)],
         "Inv_mass": [invariant_mass, r"$m_{jj}$ [GeV]", (0, 3000)],
-        "Pseudorapidity": [
+        "Delta_rapidity": [
             pseudorapidity_separation,
             r"$\left|\Delta\eta\right|$",
             (0, 10),

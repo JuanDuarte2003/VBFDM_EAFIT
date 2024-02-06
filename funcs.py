@@ -139,8 +139,8 @@ def pseudorapidity_separation(row):
     return deltaEta
 
 
-def total_henergy(row, n_jets=3):
-    H = sum([row["jet_pt{_i}"] for _i in range(n_jets)])
+def total_henergy(row, n_jets=4):
+    H = sum([row[f"jet_pt{_i}"] for _i in range(n_jets)])
     return H
 
 
@@ -155,8 +155,15 @@ def construct_variables(data):
         pseudorapidity_separation,
         invariant_mass,
         pseudorapidity_product,
+        total_henergy,
     ]
-    variables = ["Delta_phi", "Delta_rapidity", "Inv_mass", "Rapidity_prod"]
+    variables = [
+        "Delta_phi",
+        "Delta_rapidity",
+        "Inv_mass",
+        "Rapidity_prod",
+        "Hadronic_energy",
+    ]
 
     for i in range(len(variables)):
         data[variables[i]] = data.apply(funcVariables[i], axis=1)

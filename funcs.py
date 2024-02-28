@@ -117,25 +117,25 @@ def makePlots(data, folder, save=True, plot=False):
     PlotMissingETVariable(data, folder=folder, save=save, plot=plot)
 
 
-def invariant_mass(row):
+def invariant_mass(row, jet0=0, jet1=1):
     m = np.sqrt(
         2
-        * row["jet_pt0"]
-        * row["jet_pt1"]
+        * row[f"jet_pt{jet0}"]
+        * row[f"jet_pt{jet1}"]
         * abs(np.cosh(row["Delta_rapidity"]) - np.cosh(row["Delta_phi"]))
     )
     return m
 
 
-def azimuthal_difference(row):
-    deltaPhi = abs(row["jet_phi0"] - row["jet_phi1"])
+def azimuthal_difference(row, jet0=0, jet1=1):
+    deltaPhi = abs(row[f"jet_phi{jet0}"] - row[f"jet_phi{jet1}"])
     if deltaPhi > np.pi:
         deltaPhi = abs(deltaPhi - 2 * np.pi)
     return deltaPhi
 
 
-def pseudorapidity_separation(row):
-    deltaEta = abs(row["jet_eta0"] - row["jet_eta1"])
+def pseudorapidity_separation(row, jet0=0, jet1=1):
+    deltaEta = abs(row[f"jet_eta{jet0}"] - row[f"jet_eta{jet1}"])
     return deltaEta
 
 
@@ -144,8 +144,8 @@ def total_henergy(row, n_jets=4):
     return H
 
 
-def pseudorapidity_product(row):
-    etaProd = row["jet_eta0"] * row["jet_eta1"]
+def pseudorapidity_product(row, jet0=0, jet1=1):
+    etaProd = row[f"jet_eta{jet0}"] * row[f"jet_eta{jet1}"]
     return etaProd
 
 
@@ -167,6 +167,31 @@ def construct_variables(data):
 
     for i in range(len(variables)):
         data[variables[i]] = data.apply(funcVariables[i], axis=1)
+
+    return data
+
+
+def construct_variables_all(data):
+    # Only invariant mass and pseudorapidity product between all 4 jets
+    funcVariables = [
+        invariant_mass,
+        pseudorapidity_product,
+    ]
+    variables = [
+        "Inv_mass",
+        "Rapidity_prod",
+    ]
+
+    data["Hadronic_energy"] = data.apply(total_henergy, axis=1)
+
+    for i in range(len(variables)):
+        for j in range(4):
+            for k in range(4):
+                if j <= k:
+                    continue
+                data[f"{variables[i]}_{k}{j}"] = data.apply(
+                    funcVariables[i], axis=1, args=(k, j)
+                )
 
     return data
 

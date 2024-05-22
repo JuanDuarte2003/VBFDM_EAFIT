@@ -152,6 +152,6 @@ cython_debug/
 #.idea/
 
 # Too large files
-*.root
+#*.root
 background/WpJets.csv
 background/ZpJets.csv
